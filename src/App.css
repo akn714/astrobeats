@@ -1,5 +1,5 @@
 .main {
-  background: linear-gradient(45deg, #0d0012,#0d0012, black,#0d0012,#0d0012);
+  /* background: linear-gradient(45deg, #0d0012,#0d0012, black,#0d0012,#0d0012); */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,4 +7,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        background: linear-gradient(45deg, #1a0024,#1a0024, black,#1a0024,#1a0024);
+    }
 }
