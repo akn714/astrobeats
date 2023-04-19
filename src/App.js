@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="main">
         {/* <div>Welcome to AstroBeats!</div> */}
-        <Login />
-        {/* <Home /> */}
+        {/* <Login /> */}
+        <Home />
         {/* <Library /> */}
         {/* <SongList /> */}
     </div>
