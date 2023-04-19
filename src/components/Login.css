@@ -18,6 +18,8 @@
     font-size: 15px;
     outline: none;
     font-family: system-ui;
+    background: transparent;
+    border-bottom: 1px solid gray;
 }
 
 .login-form-buttons{
