@@ -13,3 +13,12 @@
     flex-direction: column;
     gap: 40px;
 }
+
+.song-category-btn{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #740074;
+    font-size: 30px;
+    color: gray;
+}

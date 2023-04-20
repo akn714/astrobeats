@@ -9,8 +9,8 @@ function App() {
     <div className="main">
         {/* <div>Welcome to AstroBeats!</div> */}
         {/* <Login /> */}
-        <Home />
-        {/* <Library /> */}
+        {/* <Home /> */}
+        <Library />
         {/* <SongList /> */}
     </div>
   );

@@ -1,5 +1,4 @@
 import './Home.css'
-import SongCategory from './SongCategory'
 
 export default function Home(){
     return (
@@ -14,6 +13,16 @@ export default function Home(){
                     <SongCategory category="English songs"/>
                 </div>
             </div>
+        </>
+    );
+}
+
+function SongCategory(props){
+    return (
+        <>
+            <button className='song-category-btn'>
+               {props.category}
+            </button>
         </>
     );
 }

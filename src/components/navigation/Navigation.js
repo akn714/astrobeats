@@ -8,3 +8,11 @@ export default function Navigation(){
         </>
     );
 }
+
+function NavBarTop(){
+
+}
+
+function NavBarBottom(){
+    
+}

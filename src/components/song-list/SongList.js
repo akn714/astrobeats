@@ -1,10 +1,17 @@
 import './SongList.css'
-import SongItem from './SongItem'
 
 export default function SongList(){
     return (
         <>
             <SongItem />
+        </>
+    );
+}
+
+function SongItem(){
+    return (
+        <>
+            <div className='song-item'>this is song item</div>
         </>
     );
 }
