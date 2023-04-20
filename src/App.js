@@ -10,8 +10,8 @@ function App() {
         {/* <div>Welcome to AstroBeats!</div> */}
         {/* <Login /> */}
         {/* <Home /> */}
-        <Library />
-        {/* <SongList /> */}
+        {/* <Library /> */}
+        <SongList />
     </div>
   );
 }
