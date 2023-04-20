@@ -1,0 +1,33 @@
+.navbar-top{
+    background: transparent;
+    height: 60px;
+    border-bottom: 1px solid gray;
+}
+
+.navbar-breaker{
+    border: none;
+    background: #2c2c2c;
+    height: 1px;
+    width: 100%;
+}
+
+.app-logo{
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+.navbar-bottom{
+    color: #8f3c3c;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid gray;
+}
