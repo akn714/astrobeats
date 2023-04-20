@@ -1,3 +1,7 @@
+.song-list{
+    padding-bottom: 60px;
+}
+
 .song-item-breaker{
     background: #464646;
     height: 1px;
@@ -7,7 +11,7 @@
 
 .song-item{
     height: 70px;
-    color: #833d85;
+    color: #593d85;
     display: flex;
     align-items: center;
 }

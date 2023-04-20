@@ -17,6 +17,7 @@ function NavBarTop(){
         <>
             <div className='navbar-top'>
                 <img className='app-logo' src='./app-logo.png' alt='app logo' />
+                <p className='app-name'>AsbtoBeats</p>
                 {/* <div className='navbar-breaker'></div> */}
             </div>
         </>

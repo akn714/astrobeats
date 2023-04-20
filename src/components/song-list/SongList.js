@@ -11,6 +11,30 @@ export default function SongList(){
                 <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
                 <div className='song-item-breaker'></div>
                 <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
+                <div className='song-item-breaker'></div>
+                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' singer='Tanishk B,Jasmine S,Garry S' isPlaying={false}/>
             </div>
         </>
     );

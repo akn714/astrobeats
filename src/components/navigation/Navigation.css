@@ -2,6 +2,9 @@
     background: transparent;
     height: 60px;
     border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    color: #990078;
 }
 
 .navbar-breaker{
@@ -15,12 +18,12 @@
     height: 40px;
     margin: 10px;
     border-radius: 10px;
-    border: 1px solid red;
+    border: 1px solid #ff000030;
 }
 
 .navbar-bottom{
     color: #8f3c3c;
-    background: transparent;
+    background: black;
     position: fixed;
     width: 100%;
     bottom: 0;
