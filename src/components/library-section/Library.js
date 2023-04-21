@@ -3,9 +3,11 @@ import './Library.css'
 export default function Library(){
     return (
         <>
-            <SavedPlaylist playlistName='playlist 1' playlistIcon='./saved-playlist-icon-2.png'/>
-            <SavedPlaylist playlistName='playlist 2' playlistIcon='./saved-playlist-icon-2.png'/>
-            <SavedPlaylist playlistName='favorites' playlistIcon='./favorites-icon-2.png' />
+            <div className='library-playlists'>
+                <SavedPlaylist playlistName='playlist 1' playlistIcon='./saved-playlist-icon-2.png'/>
+                <SavedPlaylist playlistName='playlist 2' playlistIcon='./saved-playlist-icon-2.png'/>
+                <SavedPlaylist playlistName='favorites' playlistIcon='./favorites-icon-2.png' />
+            </div>
         </>
     );
 }
