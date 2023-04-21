@@ -1,7 +1,11 @@
 import './SongList.css'
 import { useState } from 'react';
 
-export default function SongList(){
+function SongList(){
+    const [song, setSong] = useState({
+        songname: null,
+        songicon: null
+    });
     return (
         <>
             <div className='song-list'>
@@ -60,3 +64,5 @@ function SongItem(props){
         setIsPlaying(!isPlaying);
     }
 }
+
+export {SongList, song};

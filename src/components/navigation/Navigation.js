@@ -4,7 +4,7 @@ import './Navigation.css'
 // import Library from '../library-section/Library'
 // import SongList from '../song-list/SongList'
 import Player from '../player/Player'
-
+import { song } from '../song-list/SongList'
 
 // import {
 //   createBrowserRouter,
@@ -46,7 +46,7 @@ export default function Navigation(props){
             <NavBarTop />
             {/* <RouterProvider router={router} /> */}
             {props.element}
-            <Player />
+            <Player songicon={song.songicon} songname={song.songname} />
             <NavBarBottom />
             {/* <Link to="/home">home</Link>
             <Link to="/library">library</Link> */}
