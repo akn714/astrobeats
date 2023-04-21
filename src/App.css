@@ -1,11 +1,27 @@
 .body {
-  background: transparent;
+  /* background-image: url('../public/background_gif.gif'); */
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
 }
 
 .body::before {
-  background: linear-gradient(45deg, #1a0024,#1a0024, black,#1a0024,#1a0024);
+  background-image: url('../public/background_gif2.gif');
+  /* background: #0000005e; */
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.body::after {
+  background: #000000e3;
+  /* background: #0000005e; */
   content: '';
   position: fixed;
   top: 0;

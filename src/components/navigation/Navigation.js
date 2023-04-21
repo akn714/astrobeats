@@ -3,6 +3,7 @@ import './Navigation.css'
 // import Home from '../home-section/Home'
 // import Library from '../library-section/Library'
 // import SongList from '../song-list/SongList'
+import Player from '../player/Player'
 
 
 // import {
@@ -45,6 +46,7 @@ export default function Navigation(props){
             <NavBarTop />
             {/* <RouterProvider router={router} /> */}
             {props.element}
+            <Player />
             <NavBarBottom />
             {/* <Link to="/home">home</Link>
             <Link to="/library">library</Link> */}
