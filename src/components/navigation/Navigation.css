@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     color: #990078;
+    position: fixed;
+    width: 100%;
+    background: #1a0024;
 }
 
 .navbar-breaker{
