@@ -1,13 +1,18 @@
 import './Player.css'
 
-export default function Player(props){
+import {
+   Link
+ } from "react-router-dom";
+
+export default function Player(){
     return (
         <>
-            <div className='player'>
-                {/* <img className='player-song-icon' src={`${props.songicon}`}/>
-                <div className='player-song-name'>{props.songname}</div> */}
-                this is player
-            </div>
+            <div className='player'>this is player
+              
+                <a href="/">home</a>
+                <a href="/library">library</a>  
+         
+            </div>      
         </>
     );
 }
