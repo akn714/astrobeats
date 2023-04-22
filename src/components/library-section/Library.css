@@ -1,3 +1,7 @@
+.library-playlists{
+    padding-top: 60px;
+}
+
 .saved-playlist-item{
     color: rgb(34, 34, 34);
     display: flex;
