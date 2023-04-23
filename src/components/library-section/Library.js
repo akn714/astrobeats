@@ -1,6 +1,6 @@
 import './Library.css'
 
-export default function Library(){
+export function Library(){
     return (
         <>
             <div className='library-playlists'>
