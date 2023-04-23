@@ -1,6 +1,6 @@
 import './Login.css'
 
-export default function Login() {
+export function Login() {
     return (
         <>
             <form className="login-form">
