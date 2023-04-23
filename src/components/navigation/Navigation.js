@@ -3,7 +3,7 @@ import './Navigation.css'
 // import Home from '../home-section/Home'
 // import Library from '../library-section/Library'
 // import SongList from '../song-list/SongList'
-import Player from '../player/Player'
+import { Player } from '../player/Player'
 // import { song } from '../song-list/SongList'
 
 // import {
@@ -40,7 +40,7 @@ import Player from '../player/Player'
 // ]);
 
 
-export default function Navigation(props){
+export function Navigation(props){
     return (
         <>
             <NavBarTop />
