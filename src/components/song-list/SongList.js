@@ -1,7 +1,7 @@
 import './SongList.css'
 import { useState } from 'react';
 
-export default function SongList(){
+export function SongList(){
     const [song, setSong] = useState({
         songname: null,
         songicon: null
