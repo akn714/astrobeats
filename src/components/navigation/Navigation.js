@@ -46,7 +46,9 @@ function NavBarBottom() {
         <>
             <div className='navbar-bottom'>
                 {/* <div className='navbar-breaker'></div> */}
-                this is navbar bottom
+                {/* this is navbar bottom */}
+                <Link to="/">home</Link>
+                <Link to="/library">library</Link>
             </div>
         </>
     );

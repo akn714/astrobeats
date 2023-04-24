@@ -21,37 +21,45 @@ import {
        <Route
         path=""
         element={
+          <Navigation element={
             <>
-                <Home />
-                <Player />
+              <Home />
+              <Player />
             </>
+          } />
         }
        />
        <Route
          path="login"
          element={
+          <Navigation element={
             <>
-                <Login />
-                <Player />
+              <Login />
+              <Player />
             </>
+          } />
         }
        />
        <Route
         path="library"
         element={
+          <Navigation element={
             <>
-                <Library />
-                <Player />
+              <Library />
+              <Player />
             </>
+          } />
         }
        />
        <Route
         path="playlist"
         element={
+          <Navigation element={
             <>
-                <SongList />
-                <Player />
+              <SongList />
+              <Player />
             </>
+          } />
         }
        />
      </Route>
@@ -66,7 +74,7 @@ export function App() {
             {/* <Home /> */}
             {/* <Library /> */}
             {/* <SongList /> */}
-            <Navigation element={<RouterProvider router={router} />} />
+            <RouterProvider router={router} />
             {/* <Navigation /> */}
         </div>
     );

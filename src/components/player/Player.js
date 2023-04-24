@@ -9,9 +9,6 @@ export function Player(){
         <>
             <div className='player'>
                 <div>this is player</div>
-              
-                <Link to='/'>home</Link>
-                <Link to='/library'>library</Link>
             </div>
         </>
     );
