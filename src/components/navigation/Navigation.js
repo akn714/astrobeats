@@ -1,52 +1,27 @@
 import './Navigation.css'
 // import Login from '../Login/Login'
-// import Home from '../home-section/Home'
-// import Library from '../library-section/Library'
+import { Home } from '../home-section/Home'
+import { Library } from '../library-section/Library'
 // import SongList from '../song-list/SongList'
 import { Player } from '../player/Player'
-// import { song } from '../song-list/SongList'
-
-// import {
-//   createBrowserRouter,
-//   createRoutesFromElements,
-//   RouterProvider,
-//   Route,
-//   Link,
-// } from "react-router-dom";
-
-// const router = createBrowserRouter([
-//     {
-//         path: "/",
-//         element: (
-//             <Home />
-//         )
-//     },
-//     {
-//         path: "home",
-//         element: (
-//             <Home />
-//         )
-//     },
-//     {
-//         path: "library",
-//         element: (
-//             <Library />
-//         )
-//     },
-//     {
-//         path: "about",
-//         element: <div>About</div>
-//     }
-// ]);
 
 
-export function Navigation(props){
+ import {
+   createBrowserRouter,
+   createRoutesFromElements,
+   RouterProvider,
+   Route,
+   Link,
+ } from "react-router-dom";
+
+ 
+export function Navigation(props) {
     return (
         <>
             <NavBarTop />
             {/* <RouterProvider router={router} /> */}
             {props.element}
-            {/* <Player /> */}
+            {/*    <Player />*/}
             <NavBarBottom />
             {/* <Link to="/home">home</Link>
             <Link to="/library">library</Link> */}
@@ -54,7 +29,7 @@ export function Navigation(props){
     );
 }
 
-function NavBarTop(){
+function NavBarTop() {
     return (
         <>
             <div className='navbar-top'>
@@ -66,7 +41,7 @@ function NavBarTop(){
     );
 }
 
-function NavBarBottom(){
+function NavBarBottom() {
     return (
         <>
             <div className='navbar-bottom'>
