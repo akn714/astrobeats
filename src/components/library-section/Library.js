@@ -1,5 +1,9 @@
 import './Library.css'
 
+import {
+   Link
+ } from "react-router-dom";
+
 export function Library(){
     return (
         <>
@@ -15,9 +19,9 @@ export function Library(){
 function SavedPlaylist(props){
     return (
         <>
-            <div className='saved-playlist-item'>
+            <div className='saved-playlist-item' >
                 <img className='saved-playlist-item-icon' src={props.playlistIcon} alt='saved-playlist-item-icon' />
-                <div>{props.playlistName}</div>
+                <div><Link to='/playlist'> {props.playlistName}</Link></div>
             </div>
         </>
     );

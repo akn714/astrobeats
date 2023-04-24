@@ -46,7 +46,7 @@ export function Navigation(props){
             <NavBarTop />
             {/* <RouterProvider router={router} /> */}
             {props.element}
-            <Player />
+            {/* <Player /> */}
             <NavBarBottom />
             {/* <Link to="/home">home</Link>
             <Link to="/library">library</Link> */}
