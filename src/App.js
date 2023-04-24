@@ -1,10 +1,10 @@
 import './App.css'
-import Login from './components/Login/Login'
-import Home from './components/home-section/Home'
-import Library from './components/library-section/Library'
-import SongList from './components/song-list/SongList'
-import Navigation from './components/navigation/Navigation'
-import Player from './components/player/Player'
+import { Login } from './components/Login/Login'
+import { Home } from './components/home-section/Home'
+import { Library } from './components/library-section/Library'
+import { SongList } from './components/song-list/SongList'
+import { Navigation } from './components/navigation/Navigation'
+import { Player } from './components/player/Player'
 
 
 import {
@@ -62,7 +62,7 @@ import {
 //   <RouterProvider router={router} />
 // );
 
-function App() {
+export function App() {
     return (
         <div className="body">
             {/* <div>Welcome to AstroBeats!</div> */}
@@ -76,5 +76,3 @@ function App() {
         </div>
     );
 }
-
-export default App;

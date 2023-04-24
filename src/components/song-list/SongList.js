@@ -1,7 +1,7 @@
 import './SongList.css'
 import { useState } from 'react';
 
-export default function SongList() {
+export function SongList() {
     return (
         <>
             <div className='song-list'>
