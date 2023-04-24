@@ -2,6 +2,26 @@
     padding-top: 60px;
 }
 
+.library-playlists-search{
+    /* background: red; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.library-playlists-search input{
+    height: 30px;
+    width: 60%;
+    background: none;
+    border: 1px solid #80808052;
+    border-radius: 11px;
+    padding-left: 20px;
+    outline: none;
+    color: #878787;
+}
+
 .saved-playlist-item{
     color: rgb(34, 34, 34);
     display: flex;

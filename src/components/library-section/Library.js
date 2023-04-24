@@ -8,6 +8,9 @@ export function Library() {
     return (
         <>
             <div className='library-playlists'>
+                <div className='library-playlists-search'>
+                    <input type='text'  placeholder='search playlist' />
+                </div>
                 <SavedPlaylist playlistName='playlist 1' playlistIcon='./saved-playlist-icon-2.png' />
                 <SavedPlaylist playlistName='playlist 2' playlistIcon='./saved-playlist-icon-2.png' />
                 <SavedPlaylist playlistName='favorites' playlistIcon='./favorites-icon-2.png' />
