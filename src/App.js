@@ -4,39 +4,77 @@ import Home from './components/home-section/Home'
 import Library from './components/library-section/Library'
 import SongList from './components/song-list/SongList'
 import Navigation from './components/navigation/Navigation'
+import Player from './components/player/Player'
 
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route path="/" element={<Navigation element={<Home />} />}>
-//       <Route path="library" element={<Navigation element={<Library />} />} />
-//       <Route
-//         path="home"
-//         element={<Navigation element={<Home />} />}
-//       />
-//       <Route
-//         path="login"
-//         element={<Navigation element={<Login />} />}
-//       />
-//     </Route>
-//   )
-// );
+
+import {
+   createBrowserRouter,
+   createRoutesFromElements,
+   RouterProvider,
+   Route,
+   Link
+ } from "react-router-dom";
+
+ const router = createBrowserRouter(
+   createRoutesFromElements(
+     <Route path="/">
+       <Route
+        path=""
+        element={
+            <>
+                <Home />
+                <Player />
+            </>
+        }
+       />
+       <Route
+         path="login"
+        element={
+            <>
+                <Login />
+                <Player />
+            </>
+        }
+       />
+       <Route
+        path="library"
+        element={
+            <>
+                <Library />
+                <Player />
+            </>
+        }
+       />
+       <Route
+        path="playlist"
+        element={
+            <>
+                <SongList />
+                <Player />
+            </>
+        }
+       />
+     </Route>
+   )
+);
 
 // createRoot(document.getElementById("root")).render(
 //   <RouterProvider router={router} />
 // );
 
 function App() {
-  return (
-    <div className="body">
-        {/* <div>Welcome to AstroBeats!</div> */}
-        {/* <Login /> */}
-        {/* <Home /> */}
-        {/* <Library /> */}
-        {/* <SongList /> */}
-        <Navigation element={<SongList />} />
-        {/* <Navigation /> */}
-    </div>
-  );
+    return (
+        <div className="body">
+            {/* <div>Welcome to AstroBeats!</div> */}
+            {/* <Login /> */}
+            {/* <Home /> */}
+            {/* <Library /> */}
+            {/* <SongList /> */}
+            <Navigation element={<RouterProvider router={router} />} />
+            
+            {/* <Navigation /> */}
+        </div>
+    );
 }
 
 export default App;
