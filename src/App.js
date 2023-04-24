@@ -8,62 +8,48 @@ import { Player } from './components/player/Player'
 
 
 import {
-   createBrowserRouter,
-   createRoutesFromElements,
-   RouterProvider,
-   Route,
-   Link
- } from "react-router-dom";
+    createBrowserRouter,
+    createRoutesFromElements,
+    RouterProvider,
+    Route,
+    Link
+} from "react-router-dom";
 
- const router = createBrowserRouter(
-   createRoutesFromElements(
-     <Route path="/">
-       <Route
-        path=""
-        element={
-          <Navigation element={
-            <>
-              <Home />
-              <Player />
-            </>
-          } />
-        }
-       />
-       <Route
-         path="login"
-         element={
-          <Navigation element={
-            <>
-              <Login />
-              <Player />
-            </>
-          } />
-        }
-       />
-       <Route
-        path="library"
-        element={
-          <Navigation element={
-            <>
-              <Library />
-              <Player />
-            </>
-          } />
-        }
-       />
-       <Route
-        path="playlist"
-        element={
-          <Navigation element={
-            <>
-              <SongList />
-              <Player />
-            </>
-          } />
-        }
-       />
-     </Route>
-   )
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route path="/" element={ <Navigation /> }>
+            <Route index element={
+                    <>
+                        <Home />
+                        <Player />
+                    </>
+                } />
+            <Route
+                path="login"
+                element={
+                    <>
+                        <Login />
+                        <Player />
+                    </>
+                } />
+            <Route
+                path="library"
+                element={
+                    <>
+                        <Library />
+                        <Player />
+                    </>
+                } />
+            <Route
+                path="playlist"
+                element={
+                    <>
+                        <SongList />
+                        <Player />
+                    </>
+                } />
+        </Route>
+    )
 );
 
 export function App() {
