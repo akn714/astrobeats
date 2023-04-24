@@ -29,7 +29,7 @@ import {
        />
        <Route
          path="login"
-        element={
+         element={
             <>
                 <Login />
                 <Player />
@@ -58,10 +58,6 @@ import {
    )
 );
 
-// createRoot(document.getElementById("root")).render(
-//   <RouterProvider router={router} />
-// );
-
 export function App() {
     return (
         <div className="body">
@@ -71,7 +67,6 @@ export function App() {
             {/* <Library /> */}
             {/* <SongList /> */}
             <Navigation element={<RouterProvider router={router} />} />
-            
             {/* <Navigation /> */}
         </div>
     );
