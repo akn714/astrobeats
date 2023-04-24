@@ -20,8 +20,9 @@
 }
 
 .body::after {
-  background: #000000e3;
+  /* background: #000000e3; */
   /* background: #0000005e; */
+  background: #000000bd;
   content: '';
   position: fixed;
   top: 0;

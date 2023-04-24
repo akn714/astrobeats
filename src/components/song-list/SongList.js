@@ -1,11 +1,7 @@
 import './SongList.css'
 import { useState } from 'react';
 
-export default function SongList(){
-    const [song, setSong] = useState({
-        songname: null,
-        songicon: null
-    });
+export default function SongList() {
     return (
         <>
             <div className='song-list'>
@@ -45,24 +41,22 @@ export default function SongList(){
     );
 }
 
-function SongItem(props){
+function SongItem(props) {
     const [isPlaying, setIsPlaying] = useState(false);
-    
+
     return (
         <>
             <div className='song-item' onClick={songClickHandler}>
                 <img className='song-item-icon' src={props.songIcon} alt='song-item-icon'></img>
                 <div className='song-item-name'>
-                    <div className='song-songname' style={isPlaying?({'color':'#c300c3'}):({})}>{props.songName}</div>
-                    <div className='song-singer' style={isPlaying?({'color':'#396de3'}):({})}>{props.singer}</div>
+                    <div className='song-songname' style={isPlaying ? ({ 'color': '#c300c3' }) : ({})}>{props.songName}</div>
+                    <div className='song-singer' style={isPlaying ? ({ 'color': '#396de3' }) : ({})}>{props.singer}</div>
                 </div>
             </div>
         </>
     );
 
-    function songClickHandler(){
+    function songClickHandler() {
         setIsPlaying(!isPlaying);
     }
 }
-
-// export {SongList, song};
