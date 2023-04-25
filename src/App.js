@@ -5,7 +5,7 @@ import { Library } from './components/library-section/Library'
 import { SongList } from './components/song-list/SongList'
 import { Navigation } from './components/navigation/Navigation'
 import { Player } from './components/player/Player'
-
+ import { NotFound404 } from './components/notfoundpage/NotFound404'
 
 import {
     createBrowserRouter,
@@ -48,6 +48,10 @@ const router = createBrowserRouter(
                         <Player />
                     </>
                 } />
+            <Route
+                path="*"
+                element={ <NotFound404 /> }
+            />
         </Route>
     )
 );
