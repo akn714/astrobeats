@@ -5,7 +5,8 @@
 }
 
 .body::before {
-  background-image: url('../public/background_gif2.gif');
+  background-color: black;
+  /* background-image: url('../public/background_gif2.gif'); */
   /* background: #0000005e; */
   content: '';
   position: fixed;
@@ -20,9 +21,13 @@
 }
 
 .body::after {
+  background-image: url('../public/background_gif2.gif');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: inherit;
   /* background: #000000e3; */
   /* background: #0000005e; */
-  background: #000000bd;
+  /* background: #000000bd; */
   content: '';
   position: fixed;
   top: 0;
@@ -34,6 +39,6 @@
 
 @media only screen and (max-width: 600px) {
     .body {
-      background-color: transparent;
+      background: #000000bd;
     }
 }
