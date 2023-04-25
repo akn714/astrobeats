@@ -6,21 +6,22 @@ import { Library } from '../library-section/Library'
 import { Player } from '../player/Player'
 
 
- import {
-   createBrowserRouter,
-   createRoutesFromElements,
-   RouterProvider,
-   Route,
-   Link,
- } from "react-router-dom";
+import {
+    createBrowserRouter,
+    createRoutesFromElements,
+    RouterProvider,
+    Route,
+    Link,
+    Outlet
+} from "react-router-dom";
 
- 
+
 export function Navigation(props) {
     return (
         <>
             <NavBarTop />
             {/* <RouterProvider router={router} /> */}
-            {props.element}
+            <Outlet />
             {/*    <Player />*/}
             <NavBarBottom />
             {/* <Link to="/home">home</Link>
