@@ -21,7 +21,7 @@ const router = createBrowserRouter(
             <Route index element={
                     <>
                         <Home />
-                        <Player />
+                        <Player songname='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
                     </>
                 } />
             <Route
@@ -29,7 +29,7 @@ const router = createBrowserRouter(
                 element={
                     <>
                         <Login />
-                        <Player />
+                        <Player songname='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
                     </>
                 } />
             <Route
@@ -37,7 +37,7 @@ const router = createBrowserRouter(
                 element={
                     <>
                         <Library />
-                        <Player />
+                        <Player songname='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
                     </>
                 } />
             <Route
@@ -45,7 +45,7 @@ const router = createBrowserRouter(
                 element={
                     <>
                         <SongList />
-                        <Player />
+                        <Player songname='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
                     </>
                 } />
             <Route
