@@ -22,6 +22,7 @@
     padding: 6px;
     display: flex;
     align-items: center;
+    width: 47%;
 }
 
 .player-song-icon{
@@ -41,9 +42,15 @@
 
 .player-top-row-controllers {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    padding-top: 10px;
+    width: 40%;
+}
+
+.player-top-row-controllers-volume {
+    width: 100%;
 }
 
 .player-top-row-controllers img {
@@ -52,6 +59,18 @@
 
 .player-top-row-controllers-big{
     height: 20px !important;
+}
+
+.player-top-row-controllers-upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input.player-top-row-controllers-volume-btn {
+    height: 1px;
+    width: 100%;
 }
 
 .player-controller {
