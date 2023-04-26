@@ -1,11 +1,20 @@
 .player {
     color: rgb(43, 43, 43);
-    background: black;
+    background: #420000;
     height: 100px;
     width: 100%;
     position: fixed;
     left: 0;
-    bottom: 60px;
+    bottom: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-top-row{
+    display: flex;
+    align-items: center;
+    gap: 26px;
 }
 
 .player-song{
@@ -20,9 +29,6 @@
     padding: 10px;
 }
 
-.player-song-info{
-}
-
 .player-song-info-songname{
     color: rgb(195 0 195 / 75%);
     font-size: 16px;
@@ -31,6 +37,21 @@
 .player-song-info-artist{
     color: rgb(57 109 227 / 67%);
     font-size: 12px;
+}
+
+.player-top-row-controllers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-top-row-controllers img {
+    height: 27px;
+}
+
+.player-top-row-controllers-big{
+    height: 20px !important;
 }
 
 .player-controller {
