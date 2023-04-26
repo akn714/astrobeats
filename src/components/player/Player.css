@@ -1,6 +1,6 @@
 .player {
     color: rgb(43, 43, 43);
-    background: #420000;
+    background: linear-gradient(0deg, #41005a, #0000009e);
     height: 100px;
     width: 100%;
     position: fixed;
