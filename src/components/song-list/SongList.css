@@ -16,6 +16,8 @@
     display: flex;
     align-items: center;
     padding-left: 9px;
+    /* width: -webkit-fill-available; */
+    width: 100%;
 }
 
 .song-item-icon{
