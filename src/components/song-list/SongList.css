@@ -1,3 +1,11 @@
+.song{
+    position: fixed;
+    left: 158px;
+    top: 3px;
+    z-index: 1;
+    width: 250px;
+}
+
 .song-list{
     padding-bottom: 160px;
     padding-top: 60px;

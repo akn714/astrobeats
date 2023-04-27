@@ -15,7 +15,7 @@ export function SongList() {
     return (
         <>
             <div className='song-list'>
-                <audio id={`song#${Song.key}`} type="audio/mp3" src={`${Song.src}`} />
+                <audio controls className='song' id={`song#${Song.key}`} type="audio/mp3" src={`${Song.src}`} />
 
                 {
                     songs.map((song)=>{
