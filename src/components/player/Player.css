@@ -1,14 +1,15 @@
 .player {
     color: rgb(43, 43, 43);
-    background: linear-gradient(0deg, #41005a, #0000009e);
+    background: #363636;
     height: 100px;
     width: 100%;
     position: fixed;
     left: 0;
-    bottom: 61px;
+    bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .player-top-row{
@@ -31,12 +32,12 @@
 }
 
 .player-song-info-songname{
-    color: rgb(195 0 195 / 75%);
+    color: rgb(221 221 221 / 75%);
     font-size: 16px;
 }
 
 .player-song-info-artist{
-    color: rgb(57 109 227 / 67%);
+    color: rgb(120 120 120 / 67%);
     font-size: 12px;
 }
 
