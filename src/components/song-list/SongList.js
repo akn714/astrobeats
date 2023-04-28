@@ -1,7 +1,7 @@
 import './SongList.css'
 import { useState } from 'react';
 
-import { songs } from './songsData';
+import { songs } from '../../../public/songsData';
 
 export function SongList() {
 
@@ -15,21 +15,21 @@ export function SongList() {
     return (
         <>
             <div className='song-list'>
-                <audio controls className='song' id={`song#${Song.key}`} type="audio/mp3" src={`${Song.src}`} />
+                {/* <audio controls className='song' id={`song#${Song.key}`} type="audio/mp3" src={`${Song.src}`} /> */}
 
                 {
-                    songs.map((song)=>{
+                    songs.map((song) => {
                         {
                             return (
-                                <>
-                                    <SongItem key={song.id} songIcon='./saved-playlist-icon-2.png' song={song} />
+                                <div key={song.id}>
+                                    <SongItem songIcon='./saved-playlist-icon-2.png' song={song} />
                                     <div className='song-item-breaker'></div>
-                                </>
+                                </div>
                             )
                         }
                     })
                 }
-{/* 
+                {/* 
                 <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
                 <div className='song-item-breaker'></div>
                 <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
@@ -62,13 +62,13 @@ export function SongList() {
     );
 
 
-    
+
     function SongItem(props) {
         const [isPlaying, setIsPlaying] = useState(false);
 
         return (
             <>
-                <div className='song-item' onClick={(song)=>{songClickHandler(props.song)}}>
+                <div className='song-item' onClick={() => { songClickHandler(props.song) }}>
                     <img className='song-item-icon' src={props.songIcon} alt='song-item-icon'></img>
                     <div className='song-item-name'>
                         <div className='song-songname' style={isPlaying ? ({ 'color': '#c300c3' }) : ({})}>{props.song.songname}</div>
@@ -79,10 +79,17 @@ export function SongList() {
         );
 
         function songClickHandler(song) {
-            setIsPlaying(!isPlaying);
-            document.getElementById(`song#${Song.key}`).pause();
+            // setIsPlaying(!isPlaying);
+            console.log(song, document.getElementById('song'))
+            document.getElementById('song').pause();
             setSong(song);
-            document.getElementById(`song#${Song.key}`).play();
+            setTimeout(() => {
+                document.getElementById('song').setAttribute('src', Song.src);
+                document.getElementById('song').play();
+                console.log('asdf')
+                console.log(song, document.getElementById('song'))
+            }, 500)
+            console.log(song, document.getElementById('song'))
         }
     }
 }
