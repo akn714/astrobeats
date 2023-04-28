@@ -6,10 +6,10 @@ import { songs } from '../../../public/songsData';
 export function SongList() {
 
     const [Song, setSong] = useState({
-        key: 1,
-        songname: '2U',
-        artist: 'Justin Bieber',
-        src: './test-song/2U - Justin Bieber.mp3'
+        id: null,
+        songname: null,
+        artist: null,
+        src: null
     })
 
     return (
@@ -79,17 +79,24 @@ export function SongList() {
         );
 
         function songClickHandler(song) {
-            // setIsPlaying(!isPlaying);
-            console.log(song, document.getElementById('song'))
+            console.log('------------------------------------------------------------------');
+            document.getElementsByClassName('player-controller-range')[0].value = 0;
+            // console.log('max -> ', document.getElementsByClassName('player-controller-range')[0].getAttribute('max'))
+            document.getElementsByClassName('player-controller-range')[0].setAttribute('max', document.getElementById('song').duration*10);
+            setIsPlaying(!isPlaying);
+            console.log(document.getElementById('song').duration)
             document.getElementById('song').pause();
+            // console.log('song -> ', Song)
             setSong(song);
-            setTimeout(() => {
-                document.getElementById('song').setAttribute('src', Song.src);
+            // console.log('song -> ', Song)
+            document.getElementById('song').setAttribute('src', song.src);
+            // setTimeout(() => {
                 document.getElementById('song').play();
-                console.log('asdf')
-                console.log(song, document.getElementById('song'))
-            }, 500)
-            console.log(song, document.getElementById('song'))
+                // console.log('asdf')
+                // console.log(song, document.getElementById('song'))
+                // console.log('song -> ', Song)
+            // }, 500)
+            // console.log(song, document.getElementById('song'))
         }
     }
 }
