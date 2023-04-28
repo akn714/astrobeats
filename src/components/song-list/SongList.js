@@ -80,23 +80,24 @@ export function SongList() {
 
         function songClickHandler(song) {
             console.log('------------------------------------------------------------------');
-            document.getElementsByClassName('player-controller-range')[0].value = 0;
-            // console.log('max -> ', document.getElementsByClassName('player-controller-range')[0].getAttribute('max'))
-            document.getElementsByClassName('player-controller-range')[0].setAttribute('max', document.getElementById('song').duration*10);
-            setIsPlaying(!isPlaying);
-            console.log(document.getElementById('song').duration)
+            
             document.getElementById('song').pause();
-            // console.log('song -> ', Song)
+            
+            setIsPlaying(!isPlaying);
             setSong(song);
-            // console.log('song -> ', Song)
+            
+            document.getElementsByClassName('play-pause-btn')[0].src = './player icons/pause.png';
             document.getElementById('song').setAttribute('src', song.src);
-            // setTimeout(() => {
-                document.getElementById('song').play();
-                // console.log('asdf')
-                // console.log(song, document.getElementById('song'))
-                // console.log('song -> ', Song)
-            // }, 500)
-            // console.log(song, document.getElementById('song'))
+            document.getElementsByClassName('player-controller-range')[0].value = 0;
+            document.getElementsByClassName('player-song-info-songname')[0].innerText = song.songname
+            document.getElementsByClassName('player-song-info-artist')[0].innerText = song.artist
+
+            setTimeout(()=>{
+                document.getElementsByClassName('player-controller-range')[0].setAttribute('max', document.getElementById('song').duration*10);
+                console.log('asdf')
+            }, 100)
+            
+            document.getElementById('song').play();
         }
     }
 }
