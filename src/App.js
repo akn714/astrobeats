@@ -5,7 +5,7 @@ import { Library } from './components/library-section/Library'
 import { SongList } from './components/song-list/SongList'
 import { Navigation } from './components/navigation/Navigation'
 import { Player } from './components/player/Player'
- import { NotFound404 } from './components/notfoundpage/NotFound404'
+import { NotFound404 } from './components/notfoundpage/NotFound404'
 
 import {
     createBrowserRouter,
@@ -17,19 +17,19 @@ import {
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={ <Navigation /> }>
+        <Route path="/" element={<Navigation />}>
             <Route index element={
-                    <>
-                        <Home />
-                        <Player songname='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                    </>
-                } />
+                <>
+                    <Home />
+                    <Player songname='no song selected' artist='unknown' />
+                </>
+            } />
             <Route
                 path="login"
                 element={
                     <>
                         <Login />
-                        <Player songname='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
+                        <Player songname='no song selected' artist='unknown' />
                     </>
                 } />
             <Route
@@ -37,7 +37,7 @@ const router = createBrowserRouter(
                 element={
                     <>
                         <Library />
-                        <Player songname='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
+                        <Player songname='no song selected' artist='unknown' />
                     </>
                 } />
             <Route
@@ -45,12 +45,12 @@ const router = createBrowserRouter(
                 element={
                     <>
                         <SongList />
-                        <Player songname='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
+                        <Player songname='no song selected' artist='unknown' />
                     </>
                 } />
             <Route
                 path="*"
-                element={ <NotFound404 /> }
+                element={<NotFound404 />}
             />
         </Route>
     )
