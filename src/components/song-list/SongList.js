@@ -1,7 +1,7 @@
 import './SongList.css'
 import { useState } from 'react';
 
-import { songs } from '../../../public/songsData';
+import { songs } from './songsData';
 
 export function SongList() {
 

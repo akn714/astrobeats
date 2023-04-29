@@ -23,7 +23,7 @@
     color: #593d85;
     display: flex;
     align-items: center;
-    padding-left: 9px;
+    /* padding-left: 9px; */
     /* width: -webkit-fill-available; */
     width: 100%;
 }
