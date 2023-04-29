@@ -16,7 +16,7 @@ export const songs = [
     {
         "id": 3,
         "songname": "Lower Body",
-        "artist":"'Davido",
+        "artist":"Davido",
         "src": "./test-song/40. Lower Body ft. Davido.mp3",
         "isfavorites": false
     },

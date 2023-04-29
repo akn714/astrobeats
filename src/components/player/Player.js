@@ -43,6 +43,7 @@ export function Player(props) {
                     </div>
                 </div>
                 <div className='player-controller'>
+                    <script>
                     {
                         setInterval(() => {
                             document.getElementsByClassName('player-controller-range')[0].value = document.getElementById('song').currentTime * 10
@@ -52,6 +53,7 @@ export function Player(props) {
                             // console.log(document.getElementsByClassName('player-controller-range')[0].value, document.getElementById('song').currentTime)
                         }, 1000)
                     }
+                    </script>
                     <input type='range' className='player-controller-range' onChange={() => {
                         let song = document.getElementById('song');
                         document.getElementsByClassName('player-controller-range')[0].setAttribute('max', song.duration * 10);

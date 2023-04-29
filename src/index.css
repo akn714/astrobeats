@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap');
 * {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Foldit', cursive; */
+    /* font-family: 'Ysabeau', sans-serif; */
 }
