@@ -1,6 +1,7 @@
 .player {
     color: rgb(43, 43, 43);
-    background: #363636;
+    /* background: #363636; */
+    background: #1e1e1e;
     height: 100px;
     width: 100%;
     position: fixed;

@@ -14,7 +14,8 @@ export function SongList() {
 
     return (
         <>
-            <textarea type='text' onChange={()=>{
+            {/* <textarea type='text' onChange={()=>{
+                console.log('chanding')
                 setSong(JSON.parse(document.getElementsByTagName('textarea')[0].value))
                 }} style={{"position":"absolute"}} value={`{
                     "id": null,
@@ -23,7 +24,7 @@ export function SongList() {
                     "src": null,
                     "isfavorites": false
                 }`}>
-            </textarea>
+            </textarea> */}
             <div className='song-list'>
                 {/* <audio controls className='song' id={`song#${Song.key}`} type="audio/mp3" src={`${Song.src}`} /> */}
 
@@ -93,16 +94,16 @@ export function SongList() {
             
             document.getElementById('song').pause();
 
-            setInterval(() => {
-                console.log('up : ', isPlaying)
-            }, 1000);
-            console.log(isPlaying)
+            // setInterval(() => {
+            //     console.log('up : ', isPlaying)
+            // }, 1000);
+            // console.log(isPlaying)
             setisplaying(!isPlaying);
-            console.log(isPlaying)
+            // console.log(isPlaying)
             setSong(song);
-            setInterval(() => {
-                console.log('down : ', isPlaying)
-            }, 1000);
+            // setInterval(() => {
+            //     console.log('down : ', isPlaying)
+            // }, 1000);
             
             document.getElementsByClassName('play-pause-btn')[0].src = './player icons/pause.png';
             document.getElementById('song').setAttribute('src', song.src);
@@ -112,7 +113,7 @@ export function SongList() {
 
             setTimeout(()=>{
                 document.getElementsByClassName('player-controller-range')[0].setAttribute('max', document.getElementById('song').duration*10);
-                console.log('asdf')
+                // console.log('asdf')
             }, 100)
             
             document.getElementById('song').play();

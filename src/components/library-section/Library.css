@@ -1,5 +1,5 @@
 .library-playlists{
-    padding-top: 60px;
+    padding-top: 90px;
 }
 
 .library-playlists-search{
@@ -36,6 +36,7 @@
 .saved-playlist-item-icon{
     height: 40px;
     margin: 6px;
-    background-color: #242424;
+    /* background-color: #242424; */
+    background: linear-gradient(45deg, #640000b5, transparent);
     padding: 10px;
 }

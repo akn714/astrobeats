@@ -1,13 +1,17 @@
 .navbar-top{
     background: transparent;
-    height: 60px;
+    /* height: 60px; */
+    height: 90px;
     border-bottom: 1px solid gray;
     display: flex;
     align-items: center;
     color: #990078;
     position: fixed;
     width: 100%;
-    background: #1a0024;
+    /* background: #1a0024; */
+    /* background: #924cff; */
+    background: linear-gradient(180deg, #4d00c5c7, transparent);
+    transition: .5s ease-out;
 }
 
 .navbar-breaker{
@@ -24,9 +28,15 @@
     border: 1px solid #ff000030;
 }
 
+
+a {
+    color: #5775e3;
+    text-decoration: none;
+}
+
 .navbar-bottom{
     color: #8f3c3c;
-    background: black;
+    background: rgba(0, 0, 0, 0.589);
     position: fixed;
     width: 100%;
     bottom: 0;

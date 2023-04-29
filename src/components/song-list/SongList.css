@@ -8,7 +8,8 @@
 
 .song-list{
     padding-bottom: 160px;
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding-top: 90px;
 }
 
 .song-item-breaker{

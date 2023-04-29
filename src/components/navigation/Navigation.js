@@ -38,6 +38,18 @@ function NavBarTop() {
                 <p className='app-name'>AsbtoBeats</p>
                 {/* <div className='navbar-breaker'></div> */}
             </div>
+            <script>
+                {
+                    window.addEventListener('scroll', ()=>{
+                        if(window.scrollY==0){
+                            document.getElementsByClassName('navbar-top')[0].style.height = '90px'
+                        }
+                        else{
+                            document.getElementsByClassName('navbar-top')[0].style.height = '60px'
+                        }
+                    })
+                }
+            </script>
         </>
     );
 }
