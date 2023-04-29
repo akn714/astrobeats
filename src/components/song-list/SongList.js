@@ -14,6 +14,16 @@ export function SongList() {
 
     return (
         <>
+            <textarea type='text' onChange={()=>{
+                setSong(JSON.parse(document.getElementsByTagName('textarea')[0].value))
+                }} style={{"position":"absolute"}} value={`{
+                    "id": null,
+                    "songname": "no song selected",
+                    "artist": "unknown",
+                    "src": null,
+                    "isfavorites": false
+                }`}>
+            </textarea>
             <div className='song-list'>
                 {/* <audio controls className='song' id={`song#${Song.key}`} type="audio/mp3" src={`${Song.src}`} /> */}
 
@@ -68,7 +78,7 @@ export function SongList() {
 
         return (
             <>
-                <div className='song-item' onClick={() => { songClickHandler(props.song) }}>
+                <div className='song-item' onClick={() => { songClickHandler(props.song, setIsPlaying) }}>
                     <img className='song-item-icon' src={props.songIcon} alt='song-item-icon'></img>
                     <div className='song-item-name'>
                         <div className='song-songname' style={isPlaying ? ({ 'color': '#c300c3' }) : ({})}>{props.song.songname}</div>
@@ -78,13 +88,21 @@ export function SongList() {
             </>
         );
 
-        function songClickHandler(song) {
+        function songClickHandler(song, setisplaying) {
             console.log('------------------------------------------------------------------');
             
             document.getElementById('song').pause();
-            
-            setIsPlaying(!isPlaying);
+
+            setInterval(() => {
+                console.log('up : ', isPlaying)
+            }, 1000);
+            console.log(isPlaying)
+            setisplaying(!isPlaying);
+            console.log(isPlaying)
             setSong(song);
+            setInterval(() => {
+                console.log('down : ', isPlaying)
+            }, 1000);
             
             document.getElementsByClassName('play-pause-btn')[0].src = './player icons/pause.png';
             document.getElementById('song').setAttribute('src', song.src);
