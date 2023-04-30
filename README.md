@@ -11,5 +11,6 @@
 * Adding search bar to songlist
 * Adding add to favourite button in song item
 * Adding add to playlist button in song item
-* Creating search song section
-* Adding icons in navbar-bottom
+* Creating search section
+* Adding icons in navbar-botton
+* Making song duration and song played time visible
