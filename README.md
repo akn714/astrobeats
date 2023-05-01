@@ -5,7 +5,7 @@
 ### todo
 * Adding Spotify api
 * Adding create new playlist button
-* Adding authentication
+* Adding authentication and authorisation
 * Adding database
 * Writing algorithm for search bar
 * Adding search bar to songlist
