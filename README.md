@@ -14,3 +14,4 @@
 * Creating search section
 * Adding icons in navbar-botton
 * Making song duration and song played time visible
+* Adding comments for better understanding of code
