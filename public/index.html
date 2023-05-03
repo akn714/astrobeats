@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/app-logo.png" style="border:1px solid red"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
-
-    <title>AstroBeats - A Music App</title>
-
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./public/app-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstroBeats</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+      
+    <!-- new code -->
+      
+    <button onclick='fetchToken()'>fetchToken</button>
+    <!-- <div id='token'></div> -->
+    <script type='text/javascript' src='/src/auth/getToken.js'></script>
+      
+    <!--  -->
+
+      
     <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
   </body>
 </html>
