@@ -40,11 +40,11 @@ function NavBarTop() {
             </div>
             <script>
                 {
-                    window.addEventListener('scroll', ()=>{
-                        if(window.scrollY==0){
+                    window.addEventListener('scroll', () => {
+                        if (window.scrollY == 0) {
                             document.getElementsByClassName('navbar-top')[0].style.height = '90px'
                         }
-                        else{
+                        else {
                             document.getElementsByClassName('navbar-top')[0].style.height = '60px'
                         }
                     })
@@ -60,8 +60,18 @@ function NavBarBottom() {
             <div className='navbar-bottom'>
                 {/* <div className='navbar-breaker'></div> */}
                 {/* this is navbar bottom */}
-                <Link to="/">home</Link>
-                <Link to="/library">library</Link>
+                <Link to="/">
+                    <img src='../home.png' height='35px' />
+                </Link>
+                <Link to="/search">
+                    <img src='../search.png' height='35px' />
+                </Link>
+                <Link to="/library">
+                    <img src='../playlists.png' height='35px' />
+                </Link>
+                <Link to="/settings">
+                    <img src='../settings.png' height='35px' />
+                </Link>       
             </div>
         </>
     );
