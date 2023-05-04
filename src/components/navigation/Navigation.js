@@ -61,16 +61,16 @@ function NavBarBottom() {
                 {/* <div className='navbar-breaker'></div> */}
                 {/* this is navbar bottom */}
                 <Link to="/">
-                    <img src='../home.png' height='35px' />
+                    <img src='./nav icons/home.png' height='35px' />
                 </Link>
                 <Link to="/search">
-                    <img src='../search.png' height='35px' />
+                    <img src='./nav icons/search.png' height='35px' />
                 </Link>
                 <Link to="/library">
-                    <img src='../playlists.png' height='35px' />
+                    <img src='./nav icons/playlists.png' height='35px' />
                 </Link>
                 <Link to="/settings">
-                    <img src='../settings.png' height='35px' />
+                    <img src='./nav icons/settings.png' height='35px' />
                 </Link>       
             </div>
         </>
