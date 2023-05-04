@@ -44,6 +44,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 48px;
     border-top: 1px solid gray;
 }
