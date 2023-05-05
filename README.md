@@ -3,6 +3,7 @@
 * link to website : https://astrobeats.adarshkumar35.repl.co/
 
 ### todo
+* ✔️ accessing access_token of spotify api
 * Adding Spotify api
 * Adding create new playlist button
 * Adding authentication and authorisation
