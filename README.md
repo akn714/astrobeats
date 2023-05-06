@@ -4,6 +4,7 @@
 
 ### todo
 * ✅ accessing access_token of spotify api
+* Updating the token every hour, cos'z the api token will be valid for 1 hour only
 * Implementing Spotify api
 * Adding create new playlist button
 * Adding authentication and authorisation
@@ -15,6 +16,6 @@
 * Creating search section
 * ✅ Adding icons in navbar-botton
 * Making song duration and song played time visible
-* Adding comments for better understanding of code
+* Adding comments for better understanding of code + making code clean
 * Making settings section
 * Making login/signup form
