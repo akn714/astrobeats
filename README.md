@@ -20,3 +20,5 @@
 * Adding comments for better understanding of code + making code clean
 * Making settings section
 * Making login/signup form
+* Saving search history and watch history
+* Making history section
