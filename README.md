@@ -22,3 +22,4 @@
 * Making login/signup form
 * Saving search history and watch history
 * Making history section
+* Building UI for desktop
