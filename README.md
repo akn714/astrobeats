@@ -23,3 +23,4 @@
 * Saving search history and watch history
 * Making history section
 * Building UI for desktop
+* adding dark / bright mode
