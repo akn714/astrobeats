@@ -1,4 +1,5 @@
 # dependencies
+/public/test-song
 /node_modules
 /.pnp
 .pnp.js
