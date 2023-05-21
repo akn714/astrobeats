@@ -4,6 +4,7 @@
 
 ### issues
 * code on local not running
+* song and seek bar not syncing sometimes
 
 ### todo
 * Fixing the seek bar not syncing with song problem
