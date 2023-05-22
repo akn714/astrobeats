@@ -1,0 +1,23 @@
+.serach{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 90px;
+}
+.search input{
+    width: 86%;
+    margin-top: 16px;
+    border: 1px solid #5a5a5a;
+    outline: none;
+    height: 30px;
+    padding-left: 16px;
+    background: transparent;
+    border-radius: 10px;
+}
+.search-results{
+    color: white;
+    font-size: 14px;
+    padding-top: 220px;
+}
