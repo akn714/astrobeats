@@ -2,6 +2,10 @@
 * A music website
 * link to website : https://astrobeats.adarshkumar35.repl.co/
 
+### issues
+* code on local not running
+* song and seek bar not syncing sometimes
+
 ### todo
 * Fixing the seek bar not syncing with song problem
 * ✅ accessing access_token of spotify api
