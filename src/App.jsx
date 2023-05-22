@@ -6,6 +6,7 @@ import { SongList } from './components/song-list/SongList'
 import { Navigation } from './components/navigation/Navigation'
 import { Player } from './components/player/Player'
 import { NotFound404 } from './components/notfoundpage/NotFound404'
+import { SearchSection } from './components/search-section/SearchSection'
 
 import {
     createBrowserRouter,
@@ -31,7 +32,15 @@ const router = createBrowserRouter(
                         <Login />
                         <Player songname='no song selected' artist='unknown' />
                     </>
-                } />
+            } />
+            <Route
+                path='search'
+                element={
+                <>
+                    <SearchSection />
+                    <Player songname='no song selected' artist='unknown' />
+                </>
+            } />
             <Route
                 path="library"
                 element={
@@ -39,7 +48,7 @@ const router = createBrowserRouter(
                         <Library />
                         <Player songname='no song selected' artist='unknown' />
                     </>
-                } />
+            } />
             <Route
                 path="playlist"
                 element={
@@ -47,7 +56,7 @@ const router = createBrowserRouter(
                         <SongList />
                         <Player songname='no song selected' artist='unknown' />
                     </>
-                } />
+            } />
             <Route
                 path="*"
                 element={<NotFound404 />}

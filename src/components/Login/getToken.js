@@ -1,100 +1,105 @@
-console.log('getToken.js included')
+console.log('this is getToken.js')
 
-const client_id = ''     // app client id
-const client_secret = ''     // app client secret
 
-let auth_json = null;
 
-function fetchToken() {
-    console.log('fetching api token');
-    let xhr = new XMLHttpRequest();
 
-    xhr.open('POST', 'https://accounts.spotify.com/api/token', true);
+// console.log('getToken.js included')
 
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+// const client_id = ''     // app client id
+// const client_secret = ''     // app client secret
 
-    // xhr.onload = () => {
-    //     document.getElementById('token').innerText = this.responseText
-    //     console.log('fetched api token');
-    //     console.log(this.responeText)
-    // }
+// let auth_json = null;
 
-    xhr.onload = function() {
-        auth_json = JSON.parse(this.responseText);
-        // document.getElementById('token').innerText = this.responseText;
-        console.log(auth_json);
-        alert(JSON.stringify(auth_json));
-    }
+// function fetchToken() {
+//     console.log('fetching api token');
+//     let xhr = new XMLHttpRequest();
 
-    let data = `grant_type=client_credentials&client_id=${client_id}&client_secret=${client_secret}`;
-    xhr.send(data);
-}
+//     xhr.open('POST', 'https://accounts.spotify.com/api/token', true);
 
-function fetchArtist() {
-    console.log('fetching artist');
-    let xhr = new XMLHttpRequest();
+//     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-    xhr.open('GET', 'https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb', true);
+//     // xhr.onload = () => {
+//     //     document.getElementById('token').innerText = this.responseText
+//     //     console.log('fetched api token');
+//     //     console.log(this.responeText)
+//     // }
 
-    xhr.setRequestHeader('Authorization', `${auth_json.token_type} ${auth_json.access_token}`);
+//     xhr.onload = function() {
+//         auth_json = JSON.parse(this.responseText);
+//         // document.getElementById('token').innerText = this.responseText;
+//         console.log(auth_json);
+//         alert(JSON.stringify(auth_json));
+//     }
 
-    xhr.onload = function() {
-        console.log(JSON.parse(this.responseText))
-        alert(JSON.parse(this.responseText))
-    }
+//     let data = `grant_type=client_credentials&client_id=${client_id}&client_secret=${client_secret}`;
+//     xhr.send(data);
+// }
 
-    xhr.send();
-}
+// function fetchArtist() {
+//     console.log('fetching artist');
+//     let xhr = new XMLHttpRequest();
 
-let track = null;
+//     xhr.open('GET', 'https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb', true);
 
-function fetchTrack() {
-    console.log('fetching track');
-    let xhr = new XMLHttpRequest();
+//     xhr.setRequestHeader('Authorization', `${auth_json.token_type} ${auth_json.access_token}`);
 
-    xhr.open('GET', 'https://api.spotify.com/v1/tracks/6kLCHFM39wkFjOuyPGLGeQ', true);
+//     xhr.onload = function() {
+//         console.log(JSON.parse(this.responseText))
+//         alert(JSON.parse(this.responseText))
+//     }
 
-    xhr.setRequestHeader('Authorization', `${auth_json.token_type} ${auth_json.access_token}`);
+//     xhr.send();
+// }
 
-    xhr.onload = function() {
-        track = JSON.parse(this.responseText);
-        console.log(track)
-        alert(track)
-    }
+// let track = null;
 
-    xhr.send();
-}
+// function fetchTrack() {
+//     console.log('fetching track');
+//     let xhr = new XMLHttpRequest();
 
-function playTrack() {
-    console.log('fetching track');
-    let xhr = new XMLHttpRequest();
+//     xhr.open('GET', 'https://api.spotify.com/v1/tracks/6kLCHFM39wkFjOuyPGLGeQ', true);
 
-    xhr.open('PUT', 'https://api.spotify.com/v1/me/player/play', true);
+//     xhr.setRequestHeader('Authorization', `${auth_json.token_type} ${auth_json.access_token}`);
 
-    xhr.setRequestHeader('Authorization', `${auth_json.token_type} ${auth_json.access_token}`);
+//     xhr.onload = function() {
+//         track = JSON.parse(this.responseText);
+//         console.log(track)
+//         alert(track)
+//     }
 
-    xhr.onload = function() {
-        track = JSON.parse(this.responseText);
-        console.log(track)
-        alert(track)
-    }
+//     xhr.send();
+// }
 
-    xhr.send();
-}
+// function playTrack() {
+//     console.log('fetching track');
+//     let xhr = new XMLHttpRequest();
 
-function pauseTrack() {
-    console.log('fetching track');
-    let xhr = new XMLHttpRequest();
+//     xhr.open('PUT', 'https://api.spotify.com/v1/me/player/play', true);
 
-    xhr.open('PUT', 'https://api.spotify.com/v1/me/player/play', true);
+//     xhr.setRequestHeader('Authorization', `${auth_json.token_type} ${auth_json.access_token}`);
 
-    xhr.setRequestHeader('Authorization', `${auth_json.token_type} ${auth_json.access_token}`);
+//     xhr.onload = function() {
+//         track = JSON.parse(this.responseText);
+//         console.log(track)
+//         alert(track)
+//     }
 
-    xhr.onload = function() {
-        track = JSON.parse(this.responseText);
-        console.log(track)
-        alert(track)
-    }
+//     xhr.send();
+// }
 
-    xhr.send();
-}
+// function pauseTrack() {
+//     console.log('fetching track');
+//     let xhr = new XMLHttpRequest();
+
+//     xhr.open('PUT', 'https://api.spotify.com/v1/me/player/play', true);
+
+//     xhr.setRequestHeader('Authorization', `${auth_json.token_type} ${auth_json.access_token}`);
+
+//     xhr.onload = function() {
+//         track = JSON.parse(this.responseText);
+//         console.log(track)
+//         alert(track)
+//     }
+
+//     xhr.send();
+// }
