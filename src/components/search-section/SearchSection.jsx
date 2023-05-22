@@ -1,3 +1,5 @@
+import './SearchSection.css'
+
 export function SearchSection(){
     return (<>
         <div className="search">
