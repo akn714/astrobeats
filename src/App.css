@@ -5,7 +5,7 @@
 }
 
 .body::before {
-  background-color: black;
+  /* background-color: black; */
   /* background-image: url('../public/background_gif2.gif'); */
   /* background: #0000005e; */
   content: '';
@@ -21,7 +21,8 @@
 }
 
 .body::after {
-  background-image: url('../public/background_gif2.gif');
+  background-color: rgb(0, 2, 29);
+  /* background-image: url('../public/background_gif2.gif'); */
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: inherit;
@@ -39,6 +40,6 @@
 
 @media only screen and (max-width: 600px) {
     .body {
-      background: #000000bd;
+      /* background: #000000bd; */
     }
 }

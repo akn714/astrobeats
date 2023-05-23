@@ -3,40 +3,50 @@
     justify-content: center;
     align-items: center;
     padding: 40px;
-    gap: 40px;
+    /* gap: 40px; */
     padding-top: 120px;
+    padding-bottom: 170px;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .poster::before {
     content: '';
-    height: 200px;
-    width: 355px;
+    height: 232px;
+    /* width: 355px; */
+    width: 100vw;
     background: linear-gradient(45deg, black, transparent);
     position: absolute;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .app-poster{
-    height: 200px;
-    border-radius: 14px;
+    /* height: 200px; */
+    width: 100vw;
+    /* border-radius: 14px; */
 }
 
 .home-row{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
-    gap: 20px;
+    flex-direction: column;
+    /* gap: 20px; */
 }
 
 .song-category-btn{
     height: 160px;
-    width: 160px;
+    /* width: 160px; */
+    width: 100vw;
     border: 1px solid black;
     background-color: #740074;
     font-size: 30px;
     color: gray;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    background: transparent;
+    border-bottom: 1px solid;
+}
+.song-category-btn:focus{
+    background: rgba(82, 82, 82, 0.337);
+    transition: .5s;
 }
