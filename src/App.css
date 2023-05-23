@@ -38,8 +38,8 @@
   z-index: -1;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .body {
-      /* background: #000000bd; */
+      background: #000000bd;
     }
-}
+} */
