@@ -7,6 +7,7 @@ import { Navigation } from './components/navigation/Navigation'
 import { Player } from './components/player/Player'
 import { NotFound404 } from './components/notfoundpage/NotFound404'
 import { SearchSection } from './components/search-section/SearchSection'
+import { Settings } from './components/settings/Settings'
 
 import {
     createBrowserRouter,
@@ -15,7 +16,6 @@ import {
     Route,
     Link
 } from "react-router-dom";
-
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Navigation />}>
@@ -58,9 +58,21 @@ const router = createBrowserRouter(
                     </>
             } />
             <Route
+                path="settings"
+                element={
+                    <>
+                        <Settings />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+            } />
+            <Route
                 path="*"
-                element={<NotFound404 />}
-            />
+                element={
+                    <>
+                        <NotFound404 />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+            } />
         </Route>
     )
 );
