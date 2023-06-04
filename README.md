@@ -3,7 +3,7 @@
 * link to website : https://astrobeats.adarshkumar35.repl.co/
 
 ### issues
-* code on local not running
+* code on local not running ( fixed )
 * song and seek bar not syncing sometimes
 
 ### todo
@@ -28,3 +28,6 @@
 * Making history section
 * Building UI for desktop
 * adding dark / bright mode
+* changing song, playlist icon
+* adding images in song categories
+* making the color of ui little bit dimmer like gray
