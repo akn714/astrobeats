@@ -10,7 +10,7 @@
     width: 100%;
     /* background: #1a0024; */
     /* background: #924cff; */
-    background: linear-gradient(180deg, #4d00c5c7, transparent);
+    background: linear-gradient(180deg, transparent, #4d00c5c7, transparent);
     transition: .5s ease-out;
 }
 

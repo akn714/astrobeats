@@ -21,7 +21,11 @@
 }
 
 .body::after {
-  background-color: rgb(0, 2, 29);
+  
+  /* background-color: rgb(0, 2, 29); */
+  background-color: black;
+
+
   /* background-image: url('../public/background_gif2.gif'); */
   background-repeat: no-repeat;
   background-position: bottom;
