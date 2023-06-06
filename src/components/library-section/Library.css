@@ -4,24 +4,47 @@
 
 .library-playlists-search{
     /* background: red; */
-    width: 100%;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30px;
+    /* width: 84%; */
+    margin-top: 16px;
+    border-bottom: 1px solid #5a5a5a;
+    padding: 6px;
 }
 
 .library-playlists-search input{
-    height: 30px;
+    /* height: 30px;
     width: 60%;
     background: none;
     border: 1px solid #80808052;
     border-radius: 11px;
     padding-left: 20px;
     outline: none;
-    color: #878787;
+    color: #878787; */
+    width: 86%;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+    padding-left: 16px;
+    background: transparent;
+    border-radius: 10px;
+    color: rgb(147, 147, 147);
 }
-
+.library-playlists-search button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50px;
+    background: none;
+    border: none;
+}
+.library-playlists-search button img{
+    height: 20px;
+}
 .saved-playlist-item{
     color: rgb(34, 34, 34);
     display: flex;
