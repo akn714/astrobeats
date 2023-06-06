@@ -3,7 +3,7 @@
     height: 100vh;
 }
 .search-main{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -14,9 +14,9 @@
     justify-content: center;
     align-items: center;
     height: 30px;
-    width: 84%;
+    /* width: 84%; */
     margin-top: 16px;
-    border: 1px solid #5a5a5a;
+    border-bottom: 1px solid #5a5a5a;
     padding: 6px;
 }
 .search-bar button{
@@ -46,4 +46,5 @@
 }
 .search-results{
     color: #ffffffad;
+    text-align: center;
 }
