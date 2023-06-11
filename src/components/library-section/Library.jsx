@@ -14,6 +14,10 @@ export function Library() {
                         <img src="./nav icons/search.png" alt="" />
                     </button>
                 </div>
+                <div className='add-playlist-btn'>
+                    <div className='add-playlist-btn-icon'>+</div>
+                    <p>create new playlist</p>
+                </div>
                 <SavedPlaylist playlistName='playlist 1' playlistIcon='./saved-playlist-icon-2.png' />
                 <SavedPlaylist playlistName='playlist 2' playlistIcon='./saved-playlist-icon-2.png' />
                 <SavedPlaylist playlistName='favorites' playlistIcon='./favorites-icon-2.png' />

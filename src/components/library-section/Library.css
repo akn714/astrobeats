@@ -2,6 +2,28 @@
     padding-top: 90px;
 }
 
+.add-playlist-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8f8f8fa3;
+}
+.add-playlist-btn-icon{
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    font-family: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    padding: 10px;
+    border: 1px solid #8080804f;
+}
+.add-playlist-btn p{
+    color: #ffffffa3;
+}
+
 .library-playlists-search{
     /* background: red; */
     display: flex;
