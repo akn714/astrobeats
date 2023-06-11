@@ -1,7 +1,7 @@
 .player {
     color: rgb(43, 43, 43);
     /* background: #363636; */
-    background: #1e1e1e;
+    background: #343946;
     height: 100px;
     width: 100%;
     position: fixed;
@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 32px -6px black;
 }
 
 .player-top-row{
