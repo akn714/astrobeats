@@ -57,7 +57,7 @@
 .song-item{
     height: 60px;
     color: #593d85;
-    color: rgb(143, 143, 143);
+    color: rgb(199 199 199);
     display: flex;
     align-items: center;
     /* padding-left: 9px; */
@@ -84,5 +84,5 @@
 .song-singer{
     font-size: 12px;
     color: #3b5481;
-    color: #4b4b4b;
+    color: #707070;
 }
