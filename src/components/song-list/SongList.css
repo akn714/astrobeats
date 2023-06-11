@@ -6,6 +6,41 @@
     width: 250px;
 }
 
+.songlist-search{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    /* width: 84%; */
+    margin-top: 16px;
+    border-bottom: 1px solid #5a5a5a;
+    padding: 6px;
+}
+.songlist-search input{
+    width: 86%;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+    padding-left: 16px;
+    background: transparent;
+    border-radius: 10px;
+    color: rgb(147, 147, 147);
+}
+.songlist-search button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50px;
+    background: none;
+    border: none;
+}
+.songlist-search button img{
+    height: 20px;
+}
+
 .song-list{
     padding-bottom: 160px;
     /* padding-top: 60px; */

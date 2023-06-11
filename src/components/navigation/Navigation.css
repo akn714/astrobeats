@@ -15,6 +15,7 @@
     background: #020b84;
     background: #020b8487;
     background: linear-gradient(180deg, #020b8487, transparent);
+    background: rgba(0, 0, 0, 0.589);
     transition: .5s ease-out;
 }
 
@@ -41,10 +42,10 @@ a {
 
 .navbar-bottom{
     color: #8f3c3c;
-    background: rgba(0, 0, 0, 0.589);
     background: #020b84;
     background: #020b8487;
     background: linear-gradient(360deg, #020b8487, transparent);
+    background: rgba(0, 0, 0, 0.589);
     position: fixed;
     width: 100%;
     bottom: 0;

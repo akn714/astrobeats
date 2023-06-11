@@ -26,6 +26,12 @@ export function SongList() {
                 }`}>
             </textarea> */}
             <div className='song-list'>
+                <div className='songlist-search'>
+                    <input type='text'  placeholder='search song' />
+                    <button>
+                        <img src="./nav icons/search.png" alt="" />
+                    </button>
+                </div>
                 {/* <audio controls className='song' id={`song#${Song.key}`} type="audio/mp3" src={`${Song.src}`} /> */}
 
                 {

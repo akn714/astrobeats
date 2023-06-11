@@ -8,13 +8,16 @@
   /* background-color: black; */
   /* background-image: url('../public/background_gif2.gif'); */
   /* background: #0000005e; */
+  background: #00000054;
+  background: #00000080;
+  backdrop-filter: blur(10px);
   content: '';
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -4;
+  z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -23,7 +26,7 @@
 .body::after {
   
   /* background-color: rgb(0, 2, 29); */
-  background-color: black;
+  /* background-color: black; */
 
 
   /* background-image: url('../public/background_gif2.gif'); */

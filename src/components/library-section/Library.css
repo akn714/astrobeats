@@ -61,5 +61,8 @@
     margin: 6px;
     /* background-color: #242424; */
     background: linear-gradient(45deg, #640000b5, transparent);
-    padding: 10px;
+    padding: 10px;  
+    background: #2f2f2f14;
+    border: 1px solid #8080804f;
+    border-radius: 10px;
 }

@@ -80,6 +80,8 @@ const router = createBrowserRouter(
 export function App() {
     return (
         <div className="body">
+            {/* <img src="./app-poster.jpg" style="position: absolute;width: 100%;height: 100%;z-index: -2"/> */}
+            <img src="./app-poster.jpg" style={{"position":"fixed", "height":"100%", "zIndex":"-2"}}/>
             {/* <div>Welcome to AstroBeats!</div> */}
             {/* <Login /> */}
             {/* <Home /> */}
