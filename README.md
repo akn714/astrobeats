@@ -3,7 +3,6 @@
 * link to website : https://astrobeats.adarshkumar35.repl.co/
 
 ### issues
-* code on local not running ( fixed )
 * song and seek bar not syncing sometimes
 
 ### todo
