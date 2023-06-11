@@ -66,3 +66,6 @@
     border: 1px solid #8080804f;
     border-radius: 10px;
 }
+.saved-playlist-item div a{
+    color: #ffffffa3;
+}
