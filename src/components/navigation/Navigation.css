@@ -6,11 +6,15 @@
     display: flex;
     align-items: center;
     color: #990078;
+    color: white;
     position: fixed;
     width: 100%;
     /* background: #1a0024; */
     /* background: #924cff; */
     background: linear-gradient(180deg, transparent, #4d00c5c7, transparent);
+    background: #020b84;
+    background: #020b8487;
+    background: linear-gradient(180deg, #020b8487, transparent);
     transition: .5s ease-out;
 }
 
@@ -26,6 +30,7 @@
     margin: 10px;
     border-radius: 10px;
     border: 1px solid #ff000030;
+    border: 1px solid #01053f;
 }
 
 
@@ -37,6 +42,9 @@ a {
 .navbar-bottom{
     color: #8f3c3c;
     background: rgba(0, 0, 0, 0.589);
+    background: #020b84;
+    background: #020b8487;
+    background: linear-gradient(360deg, #020b8487, transparent);
     position: fixed;
     width: 100%;
     bottom: 0;

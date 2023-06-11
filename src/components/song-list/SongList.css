@@ -22,15 +22,23 @@
 .song-item{
     height: 60px;
     color: #593d85;
+    color: rgb(143, 143, 143);
     display: flex;
     align-items: center;
     /* padding-left: 9px; */
     /* width: -webkit-fill-available; */
     width: 100%;
 }
-
-.song-item-icon{
+.song-item-icon-container{
     height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #9797978a;
+}
+.song-item-icon{
+    height: 20px;
     padding: 9px;
 }
 
@@ -41,4 +49,5 @@
 .song-singer{
     font-size: 12px;
     color: #3b5481;
+    color: #4b4b4b;
 }

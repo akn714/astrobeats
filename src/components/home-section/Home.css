@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    /* padding: 40px; */
     /* gap: 40px; */
     padding-top: 120px;
     padding-bottom: 170px;
@@ -38,7 +38,7 @@
     height: 160px;
     /* width: 160px; */
     width: 100vw;
-    border: 1px solid black;
+    border: none;
     background-color: #740074;
     font-size: 30px;
     color: gray;
