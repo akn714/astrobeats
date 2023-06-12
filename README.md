@@ -10,7 +10,8 @@
 * ✅ accessing access_token of spotify api
 * Updating the token every hour, cos'z the api token will be valid for 1 hour only
 * Implementing Spotify api
-* Adding create new playlist button
+* ☑ Adding create new playlist button
+  * ui done, backend left
 * Adding authentication and authorisation
 * Adding database
 * Writing algorithm for search bar
