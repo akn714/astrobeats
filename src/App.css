@@ -16,6 +16,7 @@
   width: 50%;
   z-index: -1;
   transform: rotate(12deg);
+  box-shadow: 0px 0px 10px 0px;
 }
 
 .body::after {
@@ -30,4 +31,5 @@
   background: #1b07ff4f;
   z-index: -2;
   transform: rotate(29deg);
+  box-shadow: 0px 0px 10px 0px;
 }
