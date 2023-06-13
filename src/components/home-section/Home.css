@@ -48,5 +48,6 @@
 }
 .song-category-btn:focus{
     background: rgba(82, 82, 82, 0.337);
+    background: #0000ff14;
     transition: .5s;
 }
