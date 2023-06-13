@@ -29,10 +29,10 @@ export function Library() {
 function SavedPlaylist(props) {
     return (
         <>
-            <div className='saved-playlist-item' >
+            <Link to='/playlist' className='saved-playlist-item' >
                 <img className='saved-playlist-item-icon' src={props.playlistIcon} alt='saved-playlist-item-icon' />
-                <div><Link to='/playlist'> {props.playlistName}</Link></div>
-            </div>
+                <div><p> {props.playlistName}</p></div>
+            </Link>
         </>
     );
 }

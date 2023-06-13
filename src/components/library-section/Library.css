@@ -76,6 +76,7 @@
     gap: 10px;
     color: rgba(255, 255, 255, 0.39);
     font-family: math;
+    text-decoration: none;
 }
 
 .saved-playlist-item-icon{
@@ -88,6 +89,6 @@
     border: 1px solid #8080804f;
     border-radius: 10px;
 }
-.saved-playlist-item div a{
+.saved-playlist-item div p{
     color: #ffffffa3;
 }
