@@ -8,13 +8,14 @@ import { Player } from './components/player/Player'
 import { NotFound404 } from './components/notfoundpage/NotFound404'
 import { SearchSection } from './components/search-section/SearchSection'
 import { Settings } from './components/settings/Settings'
+import { History } from './components/history-section/History'
+
 
 import {
     createBrowserRouter,
     createRoutesFromElements,
     RouterProvider,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -46,6 +47,14 @@ const router = createBrowserRouter(
                 element={
                     <>
                         <Library />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+            } />
+            <Route
+                path="history"
+                element={
+                    <>
+                        <History />
                         <Player songname='no song selected' artist='unknown' />
                     </>
             } />
