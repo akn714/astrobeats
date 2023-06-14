@@ -70,7 +70,7 @@ function NavBarBottom() {
                     <img src='./nav icons/playlists.png' height='35px' />
                 </Link>
                 <Link to="/history">
-                    <p>H</p>
+                    <img src='./nav icons/history-icon.png' height='35px' />
                 </Link>
                 <Link to="/settings">
                     <img src='./nav icons/settings.png' height='35px' />
