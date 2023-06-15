@@ -46,34 +46,6 @@ export function SongList() {
                         }
                     })
                 }
-                {/* 
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' />
-                <div className='song-item-breaker'></div>
-                <SongItem songIcon='./saved-playlist-icon-2.png' songName='Illegal Weapon' artist='Tanishk B,Jasmine S,Garry S' /> */}
             </div>
         </>
     );
@@ -121,7 +93,6 @@ export function SongList() {
 
             setTimeout(()=>{
                 document.getElementsByClassName('player-controller-range')[0].setAttribute('max', document.getElementById('song').duration*10);
-                // console.log('asdf')
             }, 100)
             
             document.getElementById('song').play();

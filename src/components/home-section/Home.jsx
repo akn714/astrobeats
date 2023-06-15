@@ -4,9 +4,6 @@ export function Home() {
     return (
         <>
             <div className='home'>
-                {/* <div className='poster'>
-                    <img className='app-poster' src='./app-poster.jpg' />
-                </div> */}
                 <div className='home-row'>
                     <SongCategory category="Top songs" style={{ 'color': '#29ad58' }} />
                     <SongCategory category="Trending songs" style={{ 'color': '#5058bb' }} />

@@ -1,11 +1,6 @@
 import { useState } from 'react';
 import './Player.css'
 
-
-import {
-    Link
-} from "react-router-dom";
-
 export function Player(props) {
 
     const [song, setSong] = useState({
@@ -50,7 +45,6 @@ export function Player(props) {
                             if(document.getElementById('song').currentTime==document.getElementById('song').duration){
                                 document.getElementsByClassName('play-pause-btn')[0].src = './player icons/play.png';
                             }
-                            // console.log(document.getElementsByClassName('player-controller-range')[0].value, document.getElementById('song').currentTime)
                         }, 1000)
                     }
                     </script>

@@ -60,8 +60,6 @@
     color: rgb(199 199 199);
     display: flex;
     align-items: center;
-    /* padding-left: 9px; */
-    /* width: -webkit-fill-available; */
     width: 100%;
 }
 .song-item-icon-container{
