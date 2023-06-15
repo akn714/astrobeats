@@ -60,7 +60,14 @@
     color: rgb(199 199 199);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+}
+
+.song-item-left{
+    color: rgb(199 199 199);
+    display: flex;
+    align-items: center;
 }
 .song-item-icon-container{
     height: 40px;
@@ -69,21 +76,39 @@
     margin-left: 10px;
     border-radius: 10px;
     border: 1px solid #9797978a;
-
-
     background: #0000ff14;
 }
 .song-item-icon{
     height: 20px;
     padding: 9px;
 }
-
 .song-songname{
     font-size: 16px;
 }
-
 .song-singer{
     font-size: 12px;
     color: #3b5481;
     color: #707070;
+}
+
+.song-item-right{
+    height: 60%;
+    /* border: 1px solid #3d3d3d; */
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-right: 10px; */
+}
+.song-item-right img{
+    height: 20px;
+}
+.song-item-right button {
+    padding-bottom: 16px;
+    font-size: 20px;
+    color: #9ba2b5;
+    background: none;
+    border: none;
+    padding-right: 10px;
 }

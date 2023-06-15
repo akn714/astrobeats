@@ -58,12 +58,20 @@ export function SongList() {
         return (
             <>
                 <div className='song-item' onClick={() => { songClickHandler(props.song, setIsPlaying) }}>
-                    <div className='song-item-icon-container'>
-                        <img className='song-item-icon' src={props.songIcon} alt='song-item-icon'></img>
+                    <div className='song-item-left'>
+                        <div className='song-item-icon-container'>
+                            <img className='song-item-icon' src={props.songIcon} alt='song-item-icon'></img>
+                        </div>
+                        <div className='song-item-name'>
+                            <div className='song-songname' style={isPlaying ? ({ 'color': '#c300c3' }) : ({})}>{props.song.songname}</div>
+                            <div className='song-singer' style={isPlaying ? ({ 'color': '#396de3' }) : ({})}>{props.song.artist}</div>
+                        </div>
                     </div>
-                    <div className='song-item-name'>
-                        <div className='song-songname' style={isPlaying ? ({ 'color': '#c300c3' }) : ({})}>{props.song.songname}</div>
-                        <div className='song-singer' style={isPlaying ? ({ 'color': '#396de3' }) : ({})}>{props.song.artist}</div>
+                    <div className='song-item-right'>
+                        <img src='./favorites-icon.png' />
+                        <button>
+                            ...
+                        </button>
                     </div>
                 </div>
             </>
