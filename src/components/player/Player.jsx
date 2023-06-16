@@ -48,16 +48,6 @@ export function Player(props) {
                         }, 1000)
                     }
                     </script>
-                    <div className='song-played-time'>
-                        <script>
-                            {
-                                // document.getElementsByClassName('.song-played-time-min')[0].innerHTML = document.getElementById('song').currentTime;
-                            }
-                        </script>
-                        <p className='song-played-time-min'></p>
-                        :
-                        <p className='song-played-time-sec'></p>
-                    </div>
                     <input type='range' className='player-controller-range' onChange={() => {
                         let song = document.getElementById('song');
                         document.getElementsByClassName('player-controller-range')[0].setAttribute('max', song.duration * 10);
@@ -71,11 +61,6 @@ export function Player(props) {
                         }
                         document.getElementById('song').currentTime = document.getElementsByClassName('player-controller-range')[0].value / 10;
                     }} />
-                    <div className='song-total-time'>
-                        <p className='song-total-time-min'></p>
-                        :
-                        <p className='song-total-time-sec'></p>
-                    </div>
                 </div>
             </div>
         </>
