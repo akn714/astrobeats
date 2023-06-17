@@ -16,7 +16,8 @@
 * Adding database
 * Writing algorithm for search bar
 * ✅ Adding search bar to songlist
-* Adding add to favourite button in song item
+* ☑ Adding add to favourite button in song item
+  * backend left
 * Adding add to playlist button in song item
 * ☑ Creating search section
 * ✅ Adding icons in navbar-botton
