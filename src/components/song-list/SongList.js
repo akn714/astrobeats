@@ -62,8 +62,8 @@ export function SongList() {
 
         return (
             <>
-                <div className='song-item' onClick={() => { songClickHandler(props.song, setIsPlaying) }}>
-                    <div className='song-item-left'>
+                <div className='song-item'>
+                    <div className='song-item-left' onClick={() => { songClickHandler(props.song, setIsPlaying) }}>
                         <div className='song-item-icon-container'>
                             <img className='song-item-icon' src={props.songIcon} alt='song-item-icon'></img>
                         </div>
