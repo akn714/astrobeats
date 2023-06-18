@@ -25,12 +25,52 @@
 
 .so-div div button{
     position: relative;
-    padding: 4px 0px 4px 0px;
+    padding: 4px 20px 4px 20px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     user-select: none;
     background: none;
-    border: none;
+    border: 1px solid #ffffff38;
     color: white;
     width: 100%;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.so-playlists{
+    height: 0px;
+    transition: .5s;
+}
+.atpo-div{
+    display: none;
+    padding-top: 6px;
+}
+.atpo-btn{
+    height: 30px !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    background: #434dab !important;
+    color: #ffffffba !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }

@@ -29,7 +29,7 @@ export function SongList() {
                 }`}>
             </textarea> */}
             <div className='song-list'>
-                <AddToPlaylistOpts />
+                {/* <AddToPlaylistOpts /> */}
                 <SongOptions />
                 <div className='songlist-search'>
                     <input type='text'  placeholder='search song' />
