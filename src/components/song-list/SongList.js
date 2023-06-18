@@ -3,6 +3,9 @@ import { useState } from 'react';
 
 import { songs } from './songsData';
 
+import { AddToPlaylistOpts } from './AddToPlaylistOpts';
+import { SongOptions } from './SongOptions';
+
 export function SongList() {
 
     const [Song, setSong] = useState({
@@ -26,6 +29,8 @@ export function SongList() {
                 }`}>
             </textarea> */}
             <div className='song-list'>
+                <AddToPlaylistOpts />
+                <SongOptions />
                 <div className='songlist-search'>
                     <input type='text'  placeholder='search song' />
                     <button>

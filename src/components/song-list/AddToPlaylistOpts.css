@@ -1,0 +1,95 @@
+.add-to-playlist-opts{
+    background: #0000001a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.atpo-div{
+    background: #0d0e11;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.atpo-item{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+.atpo-item input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.atpo-item span.atpo-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+span.atpo-checkbox::after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.atpo-item:hover input ~ .atpo-checkbox{
+    background-color: #ccc;
+}
+.atpo-item input:checked ~ .atpo-checkbox{
+    background-color: red;
+}
+.atpo-checkbox:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.atpo-item input:checked ~ .atpo-checkbox:after {
+  display: block;
+}
+
+.atpo-item p{
+    color: gray;
+}
+
+input[type="checkbox"]:checked .atpo-div{
+    background-color: red;
+}
+
+.atpo-btn{
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #434dab;
+    color: #ffffffba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

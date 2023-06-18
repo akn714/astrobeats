@@ -17,6 +17,7 @@
     background: linear-gradient(180deg, #020b8487, transparent);
     background: rgba(0, 0, 0, 0.589);
     transition: .5s ease-out;
+    z-index: 1;
 }
 
 .navbar-breaker{
