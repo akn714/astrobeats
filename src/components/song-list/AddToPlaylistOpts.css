@@ -1,5 +1,5 @@
-.add-to-playlist-opts{
-    background: #0000001a;
+#add-to-playlist-opts{
+    background: #00000038;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +62,7 @@ span.atpo-checkbox::after{
     background-color: #ccc;
 }
 .atpo-item input:checked ~ .atpo-checkbox{
-    background-color: red;
+    background-color: #434dab;
 }
 .atpo-checkbox:after{
     content: "";
@@ -74,7 +74,7 @@ span.atpo-checkbox::after{
 }
 
 .atpo-item p{
-    color: gray;
+    color: white;
 }
 
 input[type="checkbox"]:checked .atpo-div{

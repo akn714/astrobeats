@@ -3,7 +3,7 @@ import './SongOptions.css'
 export function SongOptions(){
     return (
         <>
-            <div className="song-options">
+            <div id="song-options">
                 <div className="so-div">
                     <div>
                         <button className="add-to-playlist">add to playlist</button>
@@ -11,6 +11,13 @@ export function SongOptions(){
                     </div>
                 </div>
             </div>
+            <script>
+                {
+                    // document.getElementById('song-options').addEventListener('click', ()=>{
+                    //     document.getElementById('song-options').style.display = 'none';
+                    // })
+                }
+            </script>
         </>
     );
 }

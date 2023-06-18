@@ -74,7 +74,15 @@ export function SongList() {
                     </div>
                     <div className='song-item-right'>
                         <img src='./favorites-icon.png' />
-                        <button>
+                        <button onClick={()=>{
+                            let song_options = document.getElementById('song-options');
+                            if(song_options.style.display=='none'){
+                                song_options.style.display = 'flex';
+                            }
+                            else{
+                                song_options.style.display = 'none';
+                            }
+                        }}>
                             ...
                         </button>
                     </div>

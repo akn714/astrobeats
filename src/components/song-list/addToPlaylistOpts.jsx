@@ -3,7 +3,7 @@ import './AddToPlaylistOpts.css'
 export function AddToPlaylistOpts(){
     return (
         <>
-            <div className="add-to-playlist-opts">
+            <div id="add-to-playlist-opts">
                 <div className="atpo-div">
                     <div>
                         <label className="atpo-item">
