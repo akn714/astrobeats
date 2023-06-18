@@ -5,18 +5,23 @@ export function SongOptions() {
         <>
             <div id="song-options">
                 <div className="so-div">
-                    <div>
+                    <div style={{"position" : "relative"}}>
+                        <button className='so-cut-btn' onClick={()=>{
+                            document.getElementById('song-options').style.display = 'none';  
+                        }}>X</button>
                         <button className="add-to-playlist" 
                             onClick={() =>{
                                 if(document.getElementsByClassName('atpo-div')[0].style.display=='none'){
                                     document.getElementsByClassName('add-to-playlist')[0].style.background = '#80808014';
                                     document.getElementsByClassName('atpo-div')[0].style.display='flex';
-                                    document.getElementsByClassName('so-playlists')[0].style.height = '170px';
+                                    document.getElementsByClassName('so-playlists')[0].style.height = 'initial';
+                                    document.getElementById('so-div').style.height = '318px';
                                 }
                                 else{
                                     document.getElementsByClassName('add-to-playlist')[0].style.background = 'none';
                                     document.getElementsByClassName('atpo-div')[0].style.display='none';
                                     document.getElementsByClassName('so-playlists')[0].style.height = '0px'; 
+                                    document.getElementById('so-div').style.height = '146px';
                                 }
                             }}>Add to playlist</button>
                         <div className='so-playlists'>

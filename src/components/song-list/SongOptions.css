@@ -14,13 +14,27 @@
 
 .so-div{
     background: #0d0e11;
+    height: 146px;
     width: 70%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
+}
+
+button.so-cut-btn {
+    position: absolute !important;
+    height: 30px !important;
+    width: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: -30px;
+    right: -24px;
+    border-radius: 10px !important;
+    border: 1px solid #8080806b !important;
+    color: #8080806b !important;
 }
 
 .so-div div button{
