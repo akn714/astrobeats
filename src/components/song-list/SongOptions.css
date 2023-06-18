@@ -1,6 +1,6 @@
 #song-options{
-    background: #00000038;
-    position: absolute;
+    background: #0000007d;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -13,6 +13,7 @@
 }
 
 .so-div{
+    border: 1px solid #1f1f1f;
     background: #0d0e11;
     height: 146px;
     width: 70%;
