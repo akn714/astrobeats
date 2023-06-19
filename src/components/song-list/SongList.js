@@ -73,7 +73,8 @@ export function SongList() {
                         </div>
                     </div>
                     <div className='song-item-right'>
-                        <img src='./favorites-icon.png' onClick={(e)=>{
+                        <img className='fav-btn' src='./favorites-icon.png' onClick={(e)=>{
+                            console.log(e.target.parentElement.parentElement.children[0].children[1].children[0].innerText)
                             if(e.target.getAttribute('src')=='./favorites-icon.png'){
                                 e.target.setAttribute('src', './favorites-icon-2.png');
                             }
