@@ -73,7 +73,14 @@ export function SongList() {
                         </div>
                     </div>
                     <div className='song-item-right'>
-                        <img src='./favorites-icon.png' />
+                        <img src='./favorites-icon.png' onClick={(e)=>{
+                            if(e.target.getAttribute('src')=='./favorites-icon.png'){
+                                e.target.setAttribute('src', './favorites-icon-2.png');
+                            }
+                            else{
+                                e.target.setAttribute('src', './favorites-icon.png');
+                            }
+                        }} />
                         <button onClick={()=>{
                             let song_options = document.getElementById('song-options');
                             if(song_options.style.display=='none'){
