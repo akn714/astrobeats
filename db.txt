@@ -1,2 +1,0 @@
-* start mongodb server
-    ``` ./mongod --dbpath [folder path where db will be saved] ```
