@@ -2,7 +2,7 @@
     background: transparent;
     /* height: 60px; */
     height: 90px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.822);
     display: flex;
     align-items: center;
     color: #990078;
@@ -16,6 +16,8 @@
     background: #020b8487;
     background: linear-gradient(180deg, #020b8487, transparent);
     background: rgba(0, 0, 0, 0.589);
+    background: rgb(221 214 254 / 0.2);
+    backdrop-filter: blur(4px);
     transition: .5s ease-out;
     z-index: 1;
 }
@@ -47,7 +49,8 @@
     background: #020b84;
     background: #020b8487;
     background: linear-gradient(360deg, #020b8487, transparent);
-    background: rgba(0, 0, 0, 0.589);
+    background: rgb(221 214 254 / 0.2);
+    backdrop-filter: blur(4px);
     position: fixed;
     width: 100%;
     bottom: 0;

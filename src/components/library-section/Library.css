@@ -78,6 +78,8 @@
     background: #2f2f2f14;
     border: 1px solid #8080804f;
     border-radius: 10px;
+    background: rgb(219 223 255 / 41%);
+    border: 1px solid #ffffff7d;
 }
 .saved-playlist-item div p{
     color: #ffffffa3;

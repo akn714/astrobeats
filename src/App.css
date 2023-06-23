@@ -2,13 +2,15 @@
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   background: #000616cb;
+  background: linear-gradient(120deg, #155799db, #159957db);
+  /* background: linear-gradient(120deg, #A02BE4, #7c3aed, #4f46e5); */
 }
 
 .body::before {
   background: #00000080;
   background: #1852ffa8;
   background: #1852ff69;
-  content: '';
+  /* content: ''; */
   position: fixed;
   top: 0;
   left: 280px;
@@ -20,7 +22,7 @@
 }
 
 .body::after {
-  content: '';
+  /* content: ''; */
   height: 120%;
   width: 70%;
   position: fixed;

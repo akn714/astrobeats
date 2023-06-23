@@ -66,6 +66,7 @@
 
 .song-item-left{
     color: rgb(199 199 199);
+    color: rgb(219 223 255 / 98%);
     display: flex;
     align-items: center;
     width: 83%;
@@ -78,6 +79,8 @@
     border-radius: 10px;
     border: 1px solid #9797978a;
     background: #0000ff14;
+    border: 1px solid #ffffff42;
+    background: rgb(221 214 254 / 0.2);
 }
 .song-item-icon{
     height: 20px;
@@ -90,6 +93,7 @@
     font-size: 12px;
     color: #3b5481;
     color: #707070;
+    color: #ffffff5e;
 }
 
 .song-item-right{

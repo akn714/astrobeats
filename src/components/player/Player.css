@@ -2,6 +2,8 @@
     color: rgb(43, 43, 43);
     /* background: #363636; */
     background: #343946;
+    background: rgb(221 214 254 / 0.2);
+    backdrop-filter: blur(4px);
     height: 100px;
     width: 100%;
     position: fixed;
@@ -12,6 +14,7 @@
     justify-content: center;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 0px 32px -6px black;
+    box-shadow: 0px -20px 30px -30px black;
 }
 
 .player-top-row{
@@ -35,11 +38,13 @@
 
 .player-song-info-songname{
     color: rgb(221 221 221 / 75%);
+    color: rgb(255 255 255 / 79%);
     font-size: 16px;
 }
 
 .player-song-info-artist{
     color: rgb(120 120 120 / 67%);
+    color: rgb(255 255 255 / 54%);
     font-size: 12px;
 }
 
