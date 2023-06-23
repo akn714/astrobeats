@@ -44,19 +44,19 @@ function NavBarBottom() {
         <>
             <div className='navbar-bottom'>
                 <Link to="/">
-                    <img src='./nav icons/home.png' height='35px' />
+                    <img src='./nav icons/neon/home.png' height='35px' />
                 </Link>
                 <Link to="/search">
-                    <img src='./nav icons/search.png' height='35px' />
+                    <img src='./nav icons/neon/search.png' height='35px' />
                 </Link>
                 <Link to="/library">
-                    <img src='./nav icons/playlists.png' height='35px' />
+                    <img src='./nav icons/neon/playlists.png' height='35px' />
                 </Link>
                 <Link to="/history">
-                    <img src='./nav icons/history-icon.png' height='35px' />
+                    <img src='./nav icons/neon/history.png' height='35px' />
                 </Link>
                 <Link to="/settings">
-                    <img src='./nav icons/settings.png' height='35px' />
+                    <img src='./nav icons/neon/settings.png' height='35px' />
                 </Link>
             </div>
         </>
