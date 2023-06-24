@@ -84,7 +84,7 @@ export function SongList() {
                         }} />
                         <button onClick={()=>{
                             let song_options = document.getElementById('song-options');
-                            if(song_options.style.display=='none'){
+                            if(song_options.style.display=='none' || song_options.style.display == ''){
                                 song_options.style.display = 'flex';
                             }
                             else{

@@ -48,7 +48,7 @@
 }
 
 .song-item-breaker{
-    background: #464646;
+    background: hsla(215, 100%, 95%, 0.384);
     height: 1px;
     width: 80%;
     margin-left: 10%;

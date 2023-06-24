@@ -23,6 +23,7 @@
     align-items: center;
     flex-direction: column;
     /* padding: 20px; */
+    transition: .5s;
 }
 
 button.so-cut-btn {
@@ -36,6 +37,7 @@ button.so-cut-btn {
     border-radius: 10px !important;
     border: 1px solid #8080806b !important;
     color: #8080806b !important;
+    border: none !important;
 }
 
 .so-div div button{

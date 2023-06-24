@@ -9,9 +9,10 @@ export function SongOptions() {
                         <button className='so-cut-btn' onClick={()=>{
                             document.getElementById('song-options').style.display = 'none';  
                         }}>X</button>
-                        <button className="add-to-playlist" 
+                        <button className="add-to-playlist"
                             onClick={() =>{
-                                if(document.getElementsByClassName('atpo-div')[0].style.display=='none'){
+                                let atpo_div = document.getElementsByClassName('atpo-div')[0];
+                                if(atpo_div.style.display=='none' || atpo_div.style.display==''){
                                     document.getElementsByClassName('add-to-playlist')[0].style.background = '#80808014';
                                     document.getElementsByClassName('atpo-div')[0].style.display='flex';
                                     document.getElementsByClassName('so-playlists')[0].style.height = '170px';
