@@ -17,17 +17,6 @@ export function SongList() {
 
     return (
         <>
-            {/* <textarea type='text' onChange={()=>{
-                console.log('chanding')
-                setSong(JSON.parse(document.getElementsByTagName('textarea')[0].value))
-                }} style={{"position":"absolute"}} value={`{
-                    "id": null,
-                    "songname": "no song selected",
-                    "artist": "unknown",
-                    "src": null,
-                    "isfavorites": false
-                }`}>
-            </textarea> */}
             <div className='song-list'>
                 {/* <AddToPlaylistOpts /> */}
                 <SongOptions />
@@ -37,8 +26,6 @@ export function SongList() {
                         <img src="./nav icons/search.png" alt="" />
                     </button>
                 </div>
-                {/* <audio controls className='song' id={`song#${Song.key}`} type="audio/mp3" src={`${Song.src}`} /> */}
-
                 {
                     songs.map((song) => {
                         {
@@ -74,7 +61,7 @@ export function SongList() {
                     </div>
                     <div className='song-item-right'>
                         <img className='fav-btn' src='./favorites-icon.png' onClick={(e) => {
-                            console.log(e.target.parentElement.parentElement.children[0].children[1].children[0].innerText)
+                            // console.log(e.target.parentElement.parentElement.children[0].children[1].children[0].innerText)
                             if (e.target.getAttribute('src') == './favorites-icon.png') {
                                 e.target.setAttribute('src', './favorites-icon-2.png');
                             }
@@ -104,17 +91,8 @@ export function SongList() {
             // pause the song which was playing previously
             document.getElementById('song').pause();
 
-            // setInterval(() => {
-            //     console.log('up : ', isPlaying)
-            // }, 1000);
-            // console.log(isPlaying)
             setSong(song);
             setisplaying(!isPlaying);
-            // console.log(isPlaying)
-            console.log(song, setisplaying, isPlaying)
-            // setInterval(() => {
-            //     console.log('down : ', isPlaying)
-            // }, 1000);
 
             document.getElementsByClassName('play-pause-btn')[0].src = './player icons/pause.png';
             document.getElementById('song').setAttribute('src', song.src);

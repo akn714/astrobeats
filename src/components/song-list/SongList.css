@@ -7,12 +7,10 @@
 }
 
 .songlist-search{
-    /* background: red; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30px;
-    /* width: 84%; */
     margin-top: 16px;
     border-bottom: 1px solid #5a5a5a;
     padding: 6px;
@@ -43,7 +41,6 @@
 
 .song-list{
     padding-bottom: 160px;
-    /* padding-top: 60px; */
     padding-top: 90px;
 }
 
@@ -104,7 +101,6 @@
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    /* padding-right: 10px; */
 }
 .song-item-right img{
     height: 20px;

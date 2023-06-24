@@ -51,13 +51,6 @@ export function SongOptions() {
                     </div>
                 </div>
             </div>
-            <script>
-                {
-                    // document.getElementById('song-options').addEventListener('click', ()=>{
-                    //     document.getElementById('song-options').style.display = 'none';
-                    // })
-                }
-            </script>
         </>
     );
 }

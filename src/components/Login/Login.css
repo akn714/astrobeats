@@ -3,10 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 10px; */
-    /* border: 1px solid rgb(166 0 229 / 37%); */
     padding: 10px;
-    /* border-radius: 10px; */
     gap: 6px;
     width: 70%;
 }

@@ -49,11 +49,6 @@ export function Player(props) {
                     }
                     </script>
                     <div className='song-played-time'>
-                        <script>
-                            {
-                                // document.getElementsByClassName('.song-played-time-min')[0].innerHTML = document.getElementById('song').currentTime;
-                            }
-                        </script>
                         <p className='song-played-time-min'></p>
                         :
                         <p className='song-played-time-sec'></p>
