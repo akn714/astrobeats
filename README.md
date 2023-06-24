@@ -3,10 +3,10 @@
 * link to website : https://astrobeats.adarshkumar35.repl.co/
 
 ### issues
-* song and seek bar not syncing sometimes
+* ✅(fixed) song and seek bar not syncing sometimes
 
 ### todo
-* Fixing the seek bar not syncing with song problem
+* ✅(fixed) Fixing the seek bar not syncing with song problem
 * ✅ accessing access_token of spotify api
 * Updating the token every hour, cos'z the api token will be valid for 1 hour only
 * Implementing Spotify api
