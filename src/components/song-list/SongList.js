@@ -32,7 +32,7 @@ export function SongList() {
                 {/* <AddToPlaylistOpts /> */}
                 <SongOptions />
                 <div className='songlist-search'>
-                    <input type='text'  placeholder='search song' />
+                    <input type='text' placeholder='search song' />
                     <button>
                         <img src="./nav icons/search.png" alt="" />
                     </button>
@@ -73,21 +73,21 @@ export function SongList() {
                         </div>
                     </div>
                     <div className='song-item-right'>
-                        <img className='fav-btn' src='./favorites-icon.png' onClick={(e)=>{
+                        <img className='fav-btn' src='./favorites-icon.png' onClick={(e) => {
                             console.log(e.target.parentElement.parentElement.children[0].children[1].children[0].innerText)
-                            if(e.target.getAttribute('src')=='./favorites-icon.png'){
+                            if (e.target.getAttribute('src') == './favorites-icon.png') {
                                 e.target.setAttribute('src', './favorites-icon-2.png');
                             }
-                            else{
+                            else {
                                 e.target.setAttribute('src', './favorites-icon.png');
                             }
                         }} />
-                        <button onClick={()=>{
+                        <button onClick={() => {
                             let song_options = document.getElementById('song-options');
-                            if(song_options.style.display=='none' || song_options.style.display == ''){
+                            if (song_options.style.display == 'none' || song_options.style.display == '') {
                                 song_options.style.display = 'flex';
                             }
-                            else{
+                            else {
                                 song_options.style.display = 'none';
                             }
                         }}>
@@ -100,31 +100,32 @@ export function SongList() {
 
         function songClickHandler(song, setisplaying) {
             console.log('------------------------------------------------------------------');
-            
+
+            // pause the song which was playing previously
             document.getElementById('song').pause();
 
             // setInterval(() => {
             //     console.log('up : ', isPlaying)
             // }, 1000);
             // console.log(isPlaying)
+            setSong(song);
             setisplaying(!isPlaying);
             // console.log(isPlaying)
-            setSong(song);
+            console.log(song, setisplaying, isPlaying)
             // setInterval(() => {
             //     console.log('down : ', isPlaying)
             // }, 1000);
-            
+
             document.getElementsByClassName('play-pause-btn')[0].src = './player icons/pause.png';
             document.getElementById('song').setAttribute('src', song.src);
             document.getElementsByClassName('player-controller-range')[0].value = 0;
             document.getElementsByClassName('player-song-info-songname')[0].innerText = song.songname
             document.getElementsByClassName('player-song-info-artist')[0].innerText = song.artist
 
-            setTimeout(()=>{
-                document.getElementsByClassName('player-controller-range')[0].setAttribute('max', document.getElementById('song').duration*10);
-            }, 100)
-            
-            document.getElementById('song').play();
+            document.getElementById('song').play().then(() => {
+                // setting the max value of seek bar
+                document.getElementsByClassName('player-controller-range')[0].setAttribute('max', document.getElementById('song').duration * 10);
+            });
         }
     }
 }

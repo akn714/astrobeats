@@ -2,8 +2,8 @@
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   background: #000616cb;
-  background: linear-gradient(120deg, #155799db, #159957db);
-  background: linear-gradient(120deg, #A02BE4, #7c3aed, #4f46e5);
+  /* background: linear-gradient(120deg, #155799db, #159957db);
+  background: linear-gradient(120deg, #A02BE4, #7c3aed, #4f46e5); */
 }
 
 .body::before {

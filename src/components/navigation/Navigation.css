@@ -37,6 +37,17 @@
     border: 1px solid #01053f;
 }
 
+#theme-btn{
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    width: 80px;
+    border: 1px solid #ffffffad;
+    background: transparent;
+    border-radius: 10px;
+    color: #ffffffad;
+}
+
 
 .navbar-bottom a {
     color: #5775e3;
