@@ -32,3 +32,4 @@
 * changing song, playlist icon
 * adding images in song categories
 * ✅ making the color of ui little bit dimmer like gray
+  * added button to change theme
