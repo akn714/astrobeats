@@ -11,13 +11,13 @@
 * Updating the token every hour, cos'z the api token will be valid for 1 hour only
 * Implementing Spotify api
 * ☑ Adding create new playlist button
-  * ui done, backend left
+  * ui done, logic left
 * Adding authentication and authorisation
 * ☑ Adding database
 * Writing algorithm for search bar
 * ✅ Adding search bar to songlist
 * ☑ Adding add to favourite button in song item
-  * backend left
+  * logic left
 * ☑ Adding add to playlist button in song item
 * ☑ Creating search section
 * ✅ Adding icons in navbar-botton
@@ -32,4 +32,4 @@
 * changing song, playlist icon
 * adding images in song categories
 * ✅ making the color of ui little bit dimmer like gray
-  * added button to change theme
+  * ✅ added button to change theme
