@@ -1,6 +1,6 @@
 # AstroBeats
 * A music website
-* link to website : https://astrobeats.adarshkumar35.repl.co/
+* link to website : [AstroBeats](https://astrobeats.adarshkumar35.repl.co/)
 
 ### issues
 * ✅(fixed) song and seek bar not syncing sometimes
