@@ -4,8 +4,10 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 6px;
+    gap: 20px;
     width: 70%;
+    height: 100vh;
+    width: auto;
 }
 
 .login-form input{
@@ -21,9 +23,9 @@
 
 .login-form-buttons{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 85%;
     gap: 50px;
 }
 
@@ -32,6 +34,12 @@
     font-size: 14px;
     height: 30px;
     border: none;
-    background: #58007a;
+    background: #5178f0;
     color: #ffffffba;
+    border: 1px solid #c9d6ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }

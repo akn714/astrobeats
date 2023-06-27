@@ -1,9 +1,13 @@
 import './Settings.css'
 
+import { SongList } from '../song-list/SongList';
+
 export function Settings(){
     return (
         <div className='settings-section'>
-            <h1>this is settings section</h1>
+            <div className='settings-section-main'>
+                <p>this is settings section</p>
+            </div>
         </div>
     );
 }
