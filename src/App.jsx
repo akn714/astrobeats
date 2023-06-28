@@ -1,114 +1,139 @@
-import './Navigation.css'
+import './App.css'
+import { Login } from './components/auth/Login'
+import { Home } from './components/home-section/Home'
+import { Library } from './components/library-section/Library'
+import { SongList } from './components/song-list/SongList'
+import { Navigation } from './components/navigation/Navigation'
+import { Player } from './components/player/Player'
+import { NotFound404 } from './components/notfoundpage/NotFound404'
+import { SearchSection } from './components/search-section/SearchSection'
+import { Settings } from './components/settings/Settings'
+import { History } from './components/history-section/History'
 
-import {
-    Link,
-    Outlet
-} from "react-router-dom";
+import { Signup } from './components/auth/Signup'
+import { Signin } from './components/auth/Signin'
+
+
 import {
   ClerkProvider,
   SignedIn,
   SignedOut,
   UserButton,
   useUser,
-  RedirectToSignIn,
-  SignOutButton
+  RedirectToSignIn
 } from "@clerk/clerk-react";
 
-import { useState } from 'react';
 
-let theme = [
-    {
-        "path": '',
-    },
-    {
-        "path": '/greenish',
-    },
-    {
-        "path": '/neon',
-    }
-]
+import {
+    createBrowserRouter,
+    createRoutesFromElements,
+    RouterProvider,
+    Route
+} from "react-router-dom";
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route path="/" element={<Navigation />}>
+            <Route index element={
+                <>
+                    <Home />
+                    <Player songname='no song selected' artist='unknown' />
+                </>
+            } />
+            {/* <Route
+                path="login"
+                element={
+                    <>
+                        <Auth />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+                } /> */}
+            <Route
+                path="signup"
+                element={
+                    <>
+                        <Signup />
+                        {/* <Player songname='no song selected' artist='unknown' /> */}
+                    </>
+                } />
+            <Route
+                path="signin"
+                element={
+                    <>
+                        <Signin />
+                        {/* <Player songname='no song selected' artist='unknown' /> */}
+                    </>
+                } />
+            <Route
+                path='search'
+                element={
+                    <>
+                        <SearchSection />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+                } />
+            <Route
+                path="library"
+                element={
+                    <>
+                        <Library />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+                } />
+            <Route
+                path="history"
+                element={
+                    <>
+                        <History />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+                } />
+            <Route
+                path="playlist"
+                element={
+                    <>
+                        <SongList />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+                } />
+            <Route
+                path="settings"
+                element={
+                    <>
+                        <Settings />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+                } />
+            <Route
+                path="*"
+                element={
+                    <>
+                        <NotFound404 />
+                        <Player songname='no song selected' artist='unknown' />
+                    </>
+                } />
+        </Route>
+    )
+);
 
-export function Navigation(props) {
-    let [n, setN] = useState(0);
+
+const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
+
+export function App() {
     return (
-        <>
-            <NavBarTop n={n} setN={setN} />
-            <Outlet />
-            <NavBarBottom theme={theme[n]} />
-        </>
-    );
-}
-
-
-function NavBarTop(props) {
-    return (
-        <>
+        <div className="body">
             
-            <div className='navbar-top'>
-                <img className='app-logo' src='./app-logo.png' alt='app logo' />
-                <p className='app-name'>AsbtoBeats</p>
+            <ClerkProvider publishableKey={clerkPubKey}>
+            {/* <img src="./app-poster.jpg" style="position: absolute;width: 100%;height: 100%;z-index: -2"/> */}
+            {/* <img src="./app-poster.jpg" style={{"position":"fixed", "height":"100%", "zIndex":"-2"}}/> */}
+            {/* <div>Welcome to AstroBeats!</div> */}
+            {/* <Login /> */}
+            {/* <Home /> */}
+            {/* <Library /> */}
+            {/* <SongList /> */}
+            <RouterProvider router={router} />
+            {/* <Navigation /> */}
                 
-                <Link to='/signin'>login</Link>
-                <SignOutButton />
-                <SignedIn>
-                    <p>in</p>
-                </SignedIn>
-                <SignedOut>
-                    <p>out</p>
-                </SignedOut>
-                
-                <button id='theme-btn' onClick={() => {
-                    if (props.n == 0) {
-                        props.setN(1);
-                        document.getElementsByClassName('body')[0].style.background = 'linear-gradient(120deg, #155799db, #159957db)';
-                    }
-                    else if (props.n == 1) {
-                        props.setN(2);
-                        document.getElementsByClassName('body')[0].style.background = 'linear-gradient(120deg, #A02BE4, #7c3aed, #4f46e5)';
-                    }
-                    else {
-                        props.setN(0);
-                        document.getElementsByClassName('body')[0].style.background = '#000616cb';
-                    }
-                }}>theme</button>
-            </div>
-            <script>
-                {
-                    window.addEventListener('scroll', () => {
-                        if (window.scrollY == 0) {
-                            document.getElementsByClassName('navbar-top')[0].style.height = '90px'
-                        }
-                        else {
-                            document.getElementsByClassName('navbar-top')[0].style.height = '60px'
-                        }
-                    })
-                }
-            </script>
-                    
-        </>
-    );
-}
-
-function NavBarBottom(props) {
-    return (
-        <>
-            <div className='navbar-bottom'>
-                <Link to="/">
-                    <img src={`./nav icons${props.theme.path}/home.png`} height='35px' />
-                </Link>
-                <Link to="/search">
-                    <img src={`./nav icons${props.theme.path}/search.png`} height='35px' />
-                </Link>
-                <Link to="/library">
-                    <img src={`./nav icons${props.theme.path}/playlists.png`} height='35px' />
-                </Link>
-                <Link to="/history">
-                    <img src={`./nav icons${props.theme.path}/history.png`} height='35px' />
-                </Link>
-                <Link to="/settings">
-                    <img src={`./nav icons${props.theme.path}/settings.png`} height='35px' />
-                </Link>
-            </div>
-        </>
+            </ClerkProvider>
+        </div>
     );
 }

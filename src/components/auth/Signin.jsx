@@ -1,8 +1,8 @@
 import React from "react";
 import './auth.css'
-import { ClerkProvider, SignIn, SignUp } from "@clerk/clerk-react";
+import { SignIn } from "@clerk/clerk-react";
 
-if (!import.meta.env.VITE_REACT_APP_CLERK_PUBLISHABLE_KEY) {
+if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
     throw new Error("Missing Publishable Key")
 }
 
