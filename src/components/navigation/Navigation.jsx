@@ -4,6 +4,15 @@ import {
     Link,
     Outlet
 } from "react-router-dom";
+import {
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  UserButton,
+  useUser,
+  RedirectToSignIn,
+  SignOutButton
+} from "@clerk/clerk-react";
 
 import { useState } from 'react';
 
@@ -30,22 +39,34 @@ export function Navigation(props) {
     );
 }
 
+
 function NavBarTop(props) {
     return (
         <>
+            
             <div className='navbar-top'>
                 <img className='app-logo' src='./app-logo.png' alt='app logo' />
                 <p className='app-name'>AsbtoBeats</p>
-                <button id='theme-btn' onClick={()=>{
-                    if(props.n==0){
+                
+                <SignedIn>
+                    <SignOutButton />
+                    <p>in</p>
+                </SignedIn>
+                <SignedOut>
+                    <Link to='/signin'>login</Link>
+                    <p>out</p>
+                </SignedOut>
+                
+                <button id='theme-btn' onClick={() => {
+                    if (props.n == 0) {
                         props.setN(1);
                         document.getElementsByClassName('body')[0].style.background = 'linear-gradient(120deg, #155799db, #159957db)';
                     }
-                    else if(props.n==1){
+                    else if (props.n == 1) {
                         props.setN(2);
                         document.getElementsByClassName('body')[0].style.background = 'linear-gradient(120deg, #A02BE4, #7c3aed, #4f46e5)';
                     }
-                    else{
+                    else {
                         props.setN(0);
                         document.getElementsByClassName('body')[0].style.background = '#000616cb';
                     }
@@ -63,6 +84,7 @@ function NavBarTop(props) {
                     })
                 }
             </script>
+                    
         </>
     );
 }
