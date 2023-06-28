@@ -11,12 +11,16 @@ import { Settings } from './components/settings/Settings'
 import { History } from './components/history-section/History'
 
 
+import { Signup } from './components/Auth/Signup'
+import { Signin } from './components/Auth/Signin'
+
 import {
     createBrowserRouter,
     createRoutesFromElements,
     RouterProvider,
     Route
 } from "react-router-dom";
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Navigation />}>
@@ -27,11 +31,17 @@ const router = createBrowserRouter(
                 </>
             } />
             <Route
-                path="login"
+                path="signup"
                 element={
                     <>
-                        <Login />
-                        <Player songname='no song selected' artist='unknown' />
+                        <Signup />
+                    </>
+            } />
+            <Route
+                path="signin"
+                element={
+                    <>
+                        <Signin />
                     </>
             } />
             <Route
