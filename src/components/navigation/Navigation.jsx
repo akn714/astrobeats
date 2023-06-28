@@ -1,9 +1,13 @@
+// local imports
 import './Navigation.css'
 
+// imports from react-router-dom
 import {
     Link,
     Outlet
 } from "react-router-dom";
+
+// imports from @clerk/clerk-react
 import {
   ClerkProvider,
   SignedIn,
@@ -14,8 +18,10 @@ import {
   SignOutButton
 } from "@clerk/clerk-react";
 
+// imports from react
 import { useState } from 'react';
 
+// theme array
 let theme = [
     {
         "path": '',
@@ -28,6 +34,7 @@ let theme = [
     }
 ]
 
+// main parant object of navigation
 export function Navigation(props) {
     let [n, setN] = useState(0);
     return (
@@ -39,7 +46,7 @@ export function Navigation(props) {
     );
 }
 
-
+// top navbar
 function NavBarTop(props) {
     return (
         <>
@@ -58,20 +65,33 @@ function NavBarTop(props) {
                 </SignedOut>
                 
                 <button id='theme-btn' onClick={() => {
+                    let body = document.getElementsByClassName('body')[0];
+                    let formSubmitButton = document.getElementsByClassName('cl-formButtonPrimary 🔒️ cl-internal-1fsg6zy')[0];
+                    let optionBelowSubmitButton = document.getElementsByClassName('cl-footerActionLink 🔒️ cl-internal-15amzqo')[0];
                     if (props.n == 0) {
+                        // greenish
                         props.setN(1);
-                        document.getElementsByClassName('body')[0].style.background = 'linear-gradient(120deg, #155799db, #159957db)';
+                        body.style.background = 'linear-gradient(120deg, #155799db, #159957db)';
+                        formSubmitButton.style.background = '#58a797';
+                        optionBelowSubmitButton.style.color = 'rgb(200 221 224)';
                     }
                     else if (props.n == 1) {
+                        // neon
                         props.setN(2);
-                        document.getElementsByClassName('body')[0].style.background = 'linear-gradient(120deg, #A02BE4, #7c3aed, #4f46e5)';
+                        body.style.background = 'linear-gradient(120deg, #A02BE4, #7c3aed, #4f46e5)';
+                        formSubmitButton.style.background = 'rgba(221, 206, 250, 0.54)';
+                        optionBelowSubmitButton.style.color = '#ddcefa';
                     }
                     else {
+                        // default
                         props.setN(0);
-                        document.getElementsByClassName('body')[0].style.background = '#000616cb';
+                        body.style.background = '#000616cb';
+                        formSubmitButton.style.background = '#5270ce';
+                        optionBelowSubmitButton.style.color = '#5270ce';
                     }
                 }}>theme</button>
             </div>
+
             <script>
                 {
                     window.addEventListener('scroll', () => {
@@ -84,11 +104,11 @@ function NavBarTop(props) {
                     })
                 }
             </script>
-                    
         </>
     );
 }
 
+// bottom navbar
 function NavBarBottom(props) {
     return (
         <>
