@@ -13,8 +13,9 @@
 * Implementing Spotify api
 * ☑ Adding create new playlist button
   * ui done, logic left
-* Adding authentication and authorisation
-* ☑ Adding database
+* ☑ Adding authentication and authorisation
+  * collecting user data from clerk to my server lefts
+* Adding database
 * Writing algorithm for search bar
 * ✅ Adding search bar to songlist
 * ☑ Adding add to favourite button in song item
@@ -25,6 +26,13 @@
 * Making song duration and song played time visible
 * Adding comments for better understanding of code + making code clean
 * ☑ Making settings section
+  * turn on/off watch history
+  * turn on/off search history
+  * delete history
+  * user options form clerk
+  * change password
+  * delete account
+  * signout button
 * ☑ Making login/signup form
 * Saving search history and watch history
 * ☑ Making history section

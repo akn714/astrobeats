@@ -1,8 +1,117 @@
-.settings-section-main p{
-    color: gray;
-    position: absolute;
-    top: 18%;
-    font-size: 30px;
+.settings-section{
+    height: auto;
+    width: auto;
+}
+
+.settings-section-main{
+    padding-top: 90px;
+    /* height: 100%;
+    width: 100%; */
+}
+
+.settings-secton-item{
+    /* width: 100%; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.settings-secton-item a{
+    color: black;
+    text-decoration: none;
+}
+
+.settings-secton-item div{
+    display: flex;
+    align-items: center;
+    height: 100%;
     width: 100%;
-    text-align: center;
+    color: #ffffffe0;
+}
+.settings-item-btns{
+    justify-content: center;
+}
+.settings-item-options{
+    justify-content: space-between;
+}
+
+.settings-secton-item .settings-item-options .setting-item-options-btn{
+    height: 20px;
+    width: 40px;
+    background: none;
+    border: 1px solid #00000078;
+    border-radius: 10px;
+    padding: 0px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: 1;
+}
+.settings-secton-item .settings-item-options .setting-item-options-btn div{
+    background: #5178f0;
+    height: 16px;
+    width: 16px;
+    border-radius: 9px;
+    z-index: 0;
+}
+
+img.cl-avatarImage.cl-userButtonAvatarImage.🔒️.cl-internal-1ggvllp {
+    height: 40px;
+}
+
+.settings-item-btns .delete-history{
+    height: 80%;
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid rgb(0 0 0 / 70%);
+    border-radius: 10px;
+    color: rgb(0 0 0 / 70%);
+    font-size: 20px;
+    transition: .5s;
+}
+.settings-item-btns .delete-history:hover{
+    background: rgb(0 0 0 / 9%);
+    border-radius: 20px;
+}
+
+.settings-item-btns.clerk-opts a{
+    color: #5178f0 !important;
+    padding-right: 7px;
+}
+
+.settings-item-btns .change-pwd{
+    height: 80%;
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid rgb(0 0 0 / 70%);
+    border-radius: 10px;
+    color: rgb(0 0 0 / 70%);
+    font-size: 20px;
+    transition: .5s;
+}
+.settings-item-btns .change-pwd:hover{
+    background: rgb(0 0 0 / 9%);
+    border-radius: 20px;
+}
+
+.settings-item-delete-acc-btn{
+    height: 80%;
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: red;
+    font-size: 20px;
+    transition: .5s;
+}
+.settings-item-delete-acc-btn:hover{
+    background: rgba(255, 0, 0, 0.199);
+    border-radius: 20px;
+}
+
+.settings-item-auth-btns{
+    color: #5178f0 !important;
+    font-size: 18px;
 }

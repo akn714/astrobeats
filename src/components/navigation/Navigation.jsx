@@ -55,15 +55,7 @@ function NavBarTop(props) {
                 <img className='app-logo' src='./app-logo.png' alt='app logo' />
                 <p className='app-name'>AsbtoBeats</p>
                 
-                <SignedIn>
-                    <SignOutButton />
-                    <p>in</p>
-                </SignedIn>
-                <SignedOut>
-                    <Link to='/signin'>login</Link>
-                    <p>out</p>
-                </SignedOut>
-                
+                {/* button to change theme */}
                 <button id='theme-btn' onClick={() => {
                     let body = document.getElementsByClassName('body')[0];
                     let formSubmitButton = document.getElementsByClassName('cl-formButtonPrimary 🔒️ cl-internal-1fsg6zy')[0];
@@ -72,22 +64,28 @@ function NavBarTop(props) {
                         // greenish
                         props.setN(1);
                         body.style.background = 'linear-gradient(120deg, #155799db, #159957db)';
-                        formSubmitButton.style.background = '#58a797';
-                        optionBelowSubmitButton.style.color = 'rgb(200 221 224)';
+                        if(formSubmitButton!=undefined){
+                            formSubmitButton.style.background = '#58a797';
+                            optionBelowSubmitButton.style.color = 'rgb(200 221 224)';
+                        }
                     }
                     else if (props.n == 1) {
                         // neon
                         props.setN(2);
                         body.style.background = 'linear-gradient(120deg, #A02BE4, #7c3aed, #4f46e5)';
-                        formSubmitButton.style.background = 'rgba(221, 206, 250, 0.54)';
-                        optionBelowSubmitButton.style.color = '#ddcefa';
+                        if(formSubmitButton!=undefined){
+                            formSubmitButton.style.background = 'rgba(221, 206, 250, 0.54)';
+                            optionBelowSubmitButton.style.color = '#ddcefa';
+                        }
                     }
                     else {
                         // default
                         props.setN(0);
                         body.style.background = '#000616cb';
-                        formSubmitButton.style.background = '#5270ce';
-                        optionBelowSubmitButton.style.color = '#5270ce';
+                        if(formSubmitButton!=undefined){
+                            formSubmitButton.style.background = '#5270ce';
+                            optionBelowSubmitButton.style.color = '#5270ce';
+                        }
                     }
                 }}>theme</button>
             </div>
